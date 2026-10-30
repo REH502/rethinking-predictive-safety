@@ -1,5 +1,7 @@
 # 发行范围和数据隔离
 
+GitHub 发行说明：项目原创贡献采用仓库根目录的 MIT LICENSE；第三方代码、数据和资产仍保留其各自的许可和使用条款。根目录许可不替换下文列出的上游许可。
+
 本包从当前工作树导出三类研究的实际共享实现，保留原生模块布局和必要的版本兼容模块；不是重写的简化算法。相较上一份纯代码包，新增静态输入、安装依赖、配置与验证入口。
 
 包含：HA task YAML、task images、tool catalogs、初始 fixtures；IS-Bench task / BDDL / camera / scene templates、静态元数据、本体和字体；原生源码、相关测试、配置模板、安装工具、文档和 Linux/Python 3.11 依赖 wheels。

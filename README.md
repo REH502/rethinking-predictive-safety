@@ -1,92 +1,309 @@
-# Predictive Safety Guardrails Do Not Always Make LLM Agents Safer
+# Rethinking Predictive Safety
 
-Research code for studying how predictive world-model guardrails affect agent
-safety, prediction reliability, and decision faithfulness in digital and
-embodied environments. The accompanying manuscript is under double-blind
-review; no author names or publication identifiers are inferred here.
+### Predictive Safety Guardrails Do Not Always Make LLM Agents Safer
 
-## Reproduction at a glance
+[![License: MIT (original contributions)](https://img.shields.io/badge/original%20code-MIT-blue.svg)](LICENSE)
+[![Research: Empirical Analysis](https://img.shields.io/badge/research-empirical%20analysis-5865F2.svg)](#overview)
 
-- **RQ1:** Compare no prediction, advisory prediction, and enforced guardrails.
-- **RQ2:** Evaluate predictions against newly generated or user-provided traces.
-- **RQ3:** Test sensitivity to perturbed feedback and sandbox-verified outcomes.
-- **HarnessAudit:** Linux x86_64, glibc 2.34 or newer, Python 3.11, and access
-  to compatible model endpoints are needed for real experiments.
-- **IS-Bench:** Requires a separate environment with OmniGibson 1.1.1, its
-  assets, and a compatible NVIDIA GPU. `environment_h1` is not implemented for
-  IS-Bench and is rejected by the implementation.
-- The package does **not** include the paper's historical trajectories, scores,
-  model weights, or credentials. The supplied task list and example configuration
-  are not necessarily the exact historical paper cohort or model settings.
+Research code for an **empirical analysis of world-model-based predictive safety
+for LLM agents**. We examine when predicted consequences improve safety, whether
+the predictions are reliable, and whether agents act faithfully on their content.
 
-On the supported Linux platform, run `bash install.sh`, then configure endpoints
-with `.venv-ha/bin/python configure.py`. Read [setup](docs/SETUP.md),
-[RQ1](rq1_online/README.md), [RQ2](rq2_predict/README.md), and
-[RQ3](rq3_perturb/README.md) before running experiments. Real model calls can
-incur charges. The offline checks do not establish paper-result reproducibility
-or validate GPU experiments.
+**Paper:** the public preprint and its bibliographic metadata will be linked here
+when available.
 
-## License and attribution
+[Overview](#overview) · [Quick start](#quick-start) · [Experiments](#experiments) ·
+[Reproducibility](#reproducibility-and-release-scope) · [Validation](#validation) ·
+[Code map](#repository-layout) · [Citation](#citation)
 
-The project's original contributions are licensed under the [MIT License](LICENSE).
-The included HarnessAudit and BDDL components retain their respective licenses;
-other third-party code and assets may have different terms. The MIT license does
-not replace those terms. See [packaging notes](docs/PACKAGING.md).
+## Overview
 
----
+Predicting an action's consequences is one step toward safer execution. This work
+studies the full **prediction-to-action pipeline**, separating three questions:
 
-# World Model × Agent Safety：可安装完整实验包
+| Question | Experimental comparison | What we measure |
+| --- | --- | --- |
+| **RQ1: Safety effectiveness** | No prediction, optional prediction, and prediction-constrained execution | Safety, task completion, and inference cost |
+| **RQ2: Prediction reliability** | Prediction horizons, policy information, and direct versus iterative prediction | Accuracy, precision, risk recall, and policy overlap |
+| **RQ3: Decision faithfulness** | Five feedback perturbations and sandbox-derived feedback | Dependence on prediction content, action changes, and subsequent safety |
 
-本包包含 RQ1 online、RQ2 predict-only、RQ3 扰动的共享代码，**补齐必要的 HA / IS-Bench 基准输入**、安装入口、模型配置向导和离线自检。不是历史结果备份；不包含我们的实验轨迹、分数、请求账本、断点、模型权重或凭据。
+The study finds that stronger prediction involvement does not consistently improve
+safety, that predictive reliability weakens over longer horizons, and that safety
+gains may persist even when predictive content is corrupted. These observations
+motivate evaluating predictive safety through both **reliable foresight** and its
+**faithful use in decisions**.
 
-## 先运行 HA（Linux x86_64，glibc ≥ 2.34，Python 3.11）
+The code supports experiments in **HarnessAudit**, covering digital workflows,
+and **IS-Bench**, covering embodied household tasks. Guardrail implementations and
+benchmark adapters serve as experimental instruments for this analysis.
+
+## Requirements
+
+| Workflow | Environment | Additional requirements |
+| --- | --- | --- |
+| HarnessAudit experiments | Linux x86_64, glibc ≥ 2.34, Python 3.11 | Compatible model endpoints; credentials when required by those endpoints |
+| IS-Bench online experiments | Separate Python 3.10 environment; OmniGibson 1.1.1 | Compatible NVIDIA RTX GPU, drivers, simulator and object/scene assets |
+| IS-Bench prediction replay | Python environment with the prediction dependencies | Existing reports, labels, and camera frames; model endpoints |
+
+The bundled offline wheels target **Linux x86_64 / CPython 3.11**. They cannot be
+installed directly on macOS or Windows. Local macOS code checks are documented in
+[the validation report](docs/VALIDATION.md); they do not establish simulator or
+Linux installation compatibility.
+
+The repository is approximately **1.3 GB unpacked**, including benchmark inputs
+and offline dependencies. Downloading OmniGibson assets requires additional space.
+
+## Quick start
+
+The commands below use **Bash**, run from the repository root on the supported
+Linux platform.
+
+### 1. Clone and install
 
 ```bash
-# 在解压目录执行；不会安装到系统 Python
+git clone https://github.com/REH502/rethinking-predictive-safety.git
+cd rethinking-predictive-safety
 bash install.sh
-
-# 填写模型 ID 与地址；不会询问或保存 key
-.venv-ha/bin/python configure.py
-
-# 安全地从终端输入凭据，不把 key 放到命令历史里
-read -rs -p 'Actor key: ' ACTOR_API_KEY; export ACTOR_API_KEY; echo
-read -rs -p 'WM key: ' WM_API_KEY; export WM_API_KEY; echo
-read -rs -p 'Evaluator key: ' JUDGE_API_KEY; export JUDGE_API_KEY; echo
-
-# 单个真实任务，三臂；以下命令会调用你配置的模型并产生 API 费用
-.venv-ha/bin/python quickstart.py rq1 --output ../my-ha-rq1 --tasks dl-t4
-
-# 单个真实任务，六档扰动
-.venv-ha/bin/python quickstart.py rq3 --output ../my-ha-rq3 --tasks dl-t4
-
-# 同一目录、同一配置重执行可恢复；换模型/参数必须换输出目录
-# 全量非 SDE：附加 --all-nonsde --workers 4（本源码快照为 200 个任务，先确认预算）
 ```
 
-只检查、不调用模型：`bash install.sh` 已自动执行输入校验、六个入口检查、原生 HA 三臂/六档 dry-run 与断点/隔离预执行等回归测试。也可单独运行 `.venv-ha/bin/python tools/smoke_test.py`。**自检不证明模型服务可用，不产生科学结果。**
+`install.sh` creates `.venv-ha`, installs the bundled dependencies, verifies the
+distribution manifest, checks benchmark inputs, and runs offline smoke tests.
+Python 3.11 must be available as `python3.11`, or selected with `PYTHON_BIN`:
 
-## 内容与结构
+```bash
+PYTHON_BIN=/path/to/python3.11 bash install.sh
+```
 
-| 目录 / 文件 | 内容 |
-|---|---|
-| `run.py` | RQ1 / RQ2 / RQ3 × HA / IS-Bench 的原生参数入口 |
-| `quickstart.py` | HA 可直接执行的单任务/全量示例，不修改 harness 算法 |
-| `configure.py` | 为五角色生成无密钥 profile |
-| `source/experiments/`, `source/SafePred/` | 通用实验、模型接口、WM、扰动和审计 |
-| `source/harness_env/orgin/HarnessAudit/` | HA 实现、210 任务、8 工具目录、初始 fixtures、任务图片 |
-| `source/IS-Bench/` | 仿真适配代码、161 任务、BDDL、本体、563 场景初始化模板、字体 |
-| `inputs/` | 静态任务列表；没有依据已有实验效果筛选任务 |
-| `wheels/`, `requirements-ha.lock.txt` | Linux x86_64 / CPython 3.11 的 HA 离线安装依赖及锁定版本 |
-| `tools/doctor.py`, `tools/smoke_test.py` | 无外部 API 的输入与代码自检 |
-| `BUNDLE_MANIFEST.sha256` | 逐文件完整性校验，不含任何密钥的哈希 |
-| `docs/`, `rq*/README.md` | 人类可读的安装、代码地图与实验说明 |
+For IS-Bench, follow the separate [simulator setup](docs/SETUP.md)
+before running online experiments. The full simulator assets are obtained through
+the upstream installation process.
 
-## 不能省略的运行条件
+### 2. Inspect a run without model calls
 
-1. **真实实验必须有可用模型端点和你自己的 key**。不捆绑付费账号，也不能保证第三方 API 永不超时。可用本地 vLLM 或兼容 API；profile 的五角色独立配置。
-2. **IS-Bench online 还需要 OmniGibson 1.1.1、其大型对象/场景资产、兼容 NVIDIA RTX GPU 和驱动**；本包的初始化模板不等于完整仿真资产。见 [安装说明](docs/SETUP.md)。没有在普通 CPU 机器上假装完成 GPU 验证。
-3. **HA 六档已经实现；IS-Bench 当前只有五档文本扰动可运行**。真正隔离环境预执行 `environment_h1` 在 IS-Bench 中尚未实现，代码会拒绝启动，不冒充“正确反馈”。
-4. RQ2 需要先生成新的 online 源轨迹或提供自己的源报告；我们已有的实验轨迹不会随包发布。见 [RQ2](rq2_predict/README.md)。
-5. `quickstart.py` 是运行示例，不自动宣称 `formal ready`。正式实验仍需冻结配置、任务集、模型版本和评价口径。失败、跳过不能被隐藏。
+```bash
+.venv-ha/bin/python quickstart.py rq1 --dry-run --output ../ha-rq1-plan
+.venv-ha/bin/python quickstart.py rq3 --dry-run --output ../ha-rq3-plan
+```
 
-因此，本包提供的是**目标环境下可安装、自检、配置后启动的实验实现**，不是在任意操作系统上免安装、免模型、免 GPU 的单文件应用。
+These commands plan three RQ1 conditions and six RQ3 conditions for the default
+task `dl-t4`. Their manifests have `status: dry_run`; they contain no measured
+model performance.
+
+### 3. Configure model roles
+
+```bash
+.venv-ha/bin/python configure.py
+```
+
+The wizard creates `local/profile.yaml` with endpoint URLs and exact model IDs.
+It configures five roles: `actor`, `world_model`, `judge`, `policy_extractor`, and
+`action_agent`. By default, the last two share the world-model and actor endpoints,
+respectively. Review sampling settings, model revisions, and budgets before use.
+
+Set credentials in the shell; the wizard does not store them in the profile:
+
+```bash
+read -r -s -p 'Actor API key: ' ACTOR_API_KEY; echo
+read -r -s -p 'World-model API key: ' WM_API_KEY; echo
+read -r -s -p 'Evaluator API key: ' JUDGE_API_KEY; echo
+export ACTOR_API_KEY WM_API_KEY JUDGE_API_KEY
+```
+
+Endpoint URLs can be configured independently. For a local endpoint without
+authentication, set `auth: none` and remove `api_key_env` from the corresponding
+endpoint in the profile. See [model configuration](docs/SETUP.md) for details.
+
+### 4. Run a small experiment
+
+The following commands call your configured models and may incur API charges:
+
+```bash
+# RQ1: three prediction-involvement conditions on one task
+.venv-ha/bin/python quickstart.py rq1 --tasks dl-t4 --output ../ha-rq1-demo
+
+# RQ3: six feedback conditions on the same task
+.venv-ha/bin/python quickstart.py rq3 --tasks dl-t4 --output ../ha-rq3-demo
+```
+
+Outputs are written outside the checkout. Reuse an output directory only when
+resuming the same configuration; use a new directory when changing models or
+protocols. The example fixes seed 0, horizon 1, 24 turns, one candidate, and one
+regeneration attempt. These are example settings, not a complete specification
+of the paper's experiments.
+
+## Experiments
+
+`run.py` routes each research question to its native benchmark implementation:
+
+```bash
+.venv-ha/bin/python run.py rq1 ha -- --help
+.venv-ha/bin/python run.py rq2 ha -- --help
+.venv-ha/bin/python run.py rq3 ha -- --help
+```
+
+Replace `ha` with `isbench` for the corresponding IS-Bench entrypoint. Arguments
+after `--` are passed to the native experiment. Use `--python /path/to/python`
+before `--` to choose the benchmark interpreter.
+
+### RQ1: Does stronger prediction involvement improve safety?
+
+| Paper setting | Code option | Intervention |
+| --- | --- | --- |
+| No Prediction | `no_guard` | Execute without world-model feedback |
+| Prediction-Informed | `advisory_only` | Allow the actor to consult predictions |
+| Prediction-Constrained | `enforced_guard` | Check candidate actions and revise or block execution |
+
+The quick-start command runs all three conditions on HarnessAudit. The shared
+runner supports model-role profiles and benchmark-specific settings. See the
+[RQ1 guide](rq1_online/README.md) for IS-Bench commands and scoring details.
+
+### RQ2: Can world models reliably predict future risks?
+
+Predict-only evaluation uses recorded trajectories to compare horizons 1–6, policy
+information, and direct versus iterative rollout. It requires newly generated or
+user-provided source reports.
+
+RQ2 uses the native `--model`, `--api-url`, and `CUSTOM_API_KEY` interface rather
+than the five-role `--model-profile`. A minimal HarnessAudit example generates
+fresh source traces and then evaluates predictions:
+
+```bash
+export WM_MODEL='your-exact-model-id'
+export WM_BASE_URL='https://your-endpoint.example/v1'
+read -r -s -p 'Prediction API key: ' CUSTOM_API_KEY; echo
+export CUSTOM_API_KEY
+
+.venv-ha/bin/python run.py rq2 ha -- \
+  --tasks dl-t4 --actor-trace-seed 0 --wm-seed 0 \
+  --model "$WM_MODEL" --agent-model "$WM_MODEL" --judge-model "$WM_MODEL" \
+  --llm-provider custom --api-url "$WM_BASE_URL" \
+  --policy-modes full_harnessaudit_rules \
+  --rollout-modes direct_multi_horizon iterative_wm_rollout \
+  --horizons 1 2 3 4 5 6 --point-scheme start_mid --point-count 2 \
+  --candidate-count 1 --workers 1 --skip-existing --skip-judge \
+  --base-config "$PWD/source/SafePred/config/harnessaudit_online_openai_compatible.yaml" \
+  --output-root "$PWD/../ha-rq2/results" \
+  --trace-root "$PWD/../ha-rq2/traces" \
+  --analysis-dir "$PWD/../ha-rq2/analysis" \
+  --figure-dir "$PWD/../ha-rq2/figures"
+```
+
+Here, `--skip-judge` skips the LLM judge for fresh source trajectories. This example
+uses full benchmark rules; training-derived policies require a separate audited
+train/test split. See the [RQ2 guide](rq2_predict/README.md) for replaying existing
+reports and handling IS-Bench camera frames.
+
+### RQ3: Are decisions faithful to prediction content?
+
+| Feedback condition | CLI value | HarnessAudit | IS-Bench |
+| --- | --- | --- | --- |
+| Empty feedback | `empty` | Implemented | Implemented |
+| Irrelevant feedback | `irrelevant` | Implemented | Implemented |
+| Non-informative filler | `filler` | Implemented | Implemented |
+| Corrupted risk judgment | `corrupt` | Implemented | Implemented |
+| Key-information character corruption | `corrupt_key_random_chars` | Implemented | Implemented |
+| Sandbox-derived one-step feedback | `environment_h1` | Implemented | **Not implemented; rejected at launch** |
+
+Under `canonical_wm_all_v1`, text perturbations are applied after obtaining a
+valid world-model prediction. All listed text perturbations except `corrupt`
+retain the canonical risk gate. This distinction matters when interpreting
+retained safety gains. Sandbox-derived feedback includes additional actor-review
+computation. See the [RQ3 guide](rq3_perturb/README.md) for protocols and commands.
+
+## Reproducibility and release scope
+
+This release provides the experiment implementations, launchers, benchmark inputs,
+configuration tools, and offline tests. It supports running new experiments under
+an explicitly specified configuration.
+
+| Artifact | Availability |
+| --- | --- |
+| Experiment code, model interfaces, perturbations, scoring and analysis utilities | Included |
+| HarnessAudit definitions, tool catalogs and initial fixtures | 210 tasks; 200 non-SDE tasks in the supplied non-SDE list |
+| IS-Bench task definitions and scene initialization templates | 161 tasks; 563 templates |
+| HA dependency wheels and pinned dependency list | Included for Linux x86_64 / Python 3.11 |
+| Historical paper trajectories, scores, figures, request logs, and policy caches | Not included |
+| Model weights, model-service access, and OmniGibson's full assets | External requirements |
+| Frozen paper-run configurations and historical task cohorts | Not supplied as a complete paper-reproduction bundle |
+
+The packaged benchmark inventory must not be treated as the denominator of every
+experiment in the paper. Exact numerical reproduction also requires the original
+model revisions, prompts and policies, cohort definitions, budgets, evaluator
+configuration, and raw outputs. These commands alone do not reproduce the paper's
+tables from released historical data.
+
+For new experiments, record the Git commit, model revisions, role profile, task
+list, seeds, generation settings, endpoint behavior, and evaluation coverage.
+Preserve failures and missing predictions in the reported denominator. Resume
+support validates saved state and identities; arbitrary remote side effects and
+interrupted requests are not guaranteed to replay exactly once. See
+[the code map and recovery notes](docs/CODE_MAP.md).
+
+## Validation
+
+```bash
+# SHA-256 checks and parsing of every manifested Python source
+python3 tools/verify_bundle.py
+
+# Dependency imports, task inventory, and static fixture checks
+.venv-ha/bin/python tools/doctor.py
+
+# Six CLI help paths, profile loading, native dry-run matrices, and regression tests
+.venv-ha/bin/python tools/smoke_test.py
+```
+
+The bundled smoke suite passes **174 tests** in the current local check
+environment. One additional IS-Bench test module requires the separate simulator
+dependency environment and was not validated here. These offline checks do not
+validate model quality, paid API endpoints, or simulator execution. See
+[docs/VALIDATION.md](docs/VALIDATION.md) for the environment, complete check scope,
+and the optional Hugging Face backend finding.
+
+## Repository layout
+
+```text
+.
+├── run.py                     # Native RQ × benchmark launcher
+├── quickstart.py              # Small HarnessAudit RQ1 / RQ3 experiments
+├── configure.py               # Credential-free model-role configuration
+├── install.sh                 # Supported HA environment installation
+├── requirements-ha.lock.txt   # Pinned Linux/Python 3.11 dependencies
+├── inputs/                    # Static benchmark task lists
+├── rq1_online/                # Prediction-involvement experiment guide
+├── rq2_predict/               # Prediction-reliability experiment guide
+├── rq3_perturb/               # Decision-faithfulness experiment guide
+├── source/
+│   ├── experiments/            # Orchestration, model roles, audits, analysis
+│   ├── SafePred/               # Prediction interfaces and supporting components
+│   ├── harness_env/orgin/HarnessAudit/
+│   └── IS-Bench/               # Embodied benchmark adapters and inputs
+├── tools/                     # Distribution, input, and smoke checks
+├── wheels/                    # HA offline installation dependencies
+└── docs/                      # Setup, source map, packaging, validation
+```
+
+The `orgin` directory spelling is preserved from the source snapshot. Detailed
+module-level entrypoints are listed in [docs/CODE_MAP.md](docs/CODE_MAP.md).
+
+## Citation
+
+The paper's public preprint link and formal BibTeX entry will be added after
+publication. For now, identify this code by its repository URL and the exact
+commit used in your experiments.
+
+## Acknowledgments and license
+
+This study builds on [HarnessAudit](https://github.com/eric-ai-lab/HarnessAudit),
+[IS-Bench](https://github.com/AI45Lab/IS-Bench),
+[BDDL](https://github.com/StanfordVL/bddl), and SafePred components included in
+`source/SafePred/`. We thank their contributors.
+
+The [MIT License](LICENSE) covers this project's original contributions.
+Third-party components and assets retain their own terms, including the bundled
+[HarnessAudit license](source/harness_env/orgin/HarnessAudit/LICENSE) and
+[BDDL license](source/IS-Bench/bddl/LICENSE). The top-level license does not
+relicense third-party resources. See [packaging notes](docs/PACKAGING.md).
+
+For bugs or reproducibility questions, please open a
+[GitHub issue](https://github.com/REH502/rethinking-predictive-safety/issues)
+with the commit, environment, command, and a redacted traceback.
