@@ -1,0 +1,57 @@
+# SafePred online action-guard config for HarnessAudit.
+# API keys are read from environment variables:
+#   CUSTOM_API_KEY
+#   CUSTOM_API_URL
+
+logging:
+  level: "INFO"
+
+world_model_llm:
+  provider: "custom"
+  model_name: "deepseek-v4-flash"
+  temperature: 0.0
+  max_tokens: 3000
+  timeout: 360
+  use_state_delta: true
+  prediction_steps: 3
+  log_prompt: false
+  show_policy_references: false
+
+experience_replay:
+  enable: false
+
+trajectory_storage:
+  enable: false
+
+conversation_history:
+  max_length: 30
+  show_full_response: true
+
+planning:
+  enable: true
+  risk_guidance_enable: true
+  enable_short_term_prediction: true
+  enable_long_term_prediction: true
+
+action_agent_llm:
+  provider: "custom"
+  model_name: "deepseek-v4-flash"
+  temperature: 0.4
+  max_tokens: 2500
+  timeout: 360
+  log_prompt: false
+
+action_sampling:
+  num_samples: 5
+  use_diverse_sampling: true
+
+risk_score_config:
+  violation_penalty: 0.8
+
+tree_search:
+  n_root: 5
+  n_child: 2
+  m_child: 1
+  max_depth: 2
+  root_risk_threshold: 0.7
+  child_risk_threshold: 0.7

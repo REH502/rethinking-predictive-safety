@@ -1,0 +1,46 @@
+schema_version: model-stack-profile-v1
+defaults:
+  temperature: 0.0
+  max_tokens: 4096
+  timeout_seconds: 360
+  transport_max_attempts: 1
+endpoints:
+  actor_endpoint:
+    base_url_env: ACTOR_BASE_URL
+    api_key_env: ACTOR_API_KEY
+    api_mode: chat_completions
+  judge_endpoint:
+    base_url_env: JUDGE_BASE_URL
+    api_key_env: JUDGE_API_KEY
+    api_mode: chat_completions
+  wm_endpoint:
+    base_url_env: WM_BASE_URL
+    api_key_env: WM_API_KEY
+    api_mode: chat_completions
+roles:
+  actor:
+    endpoint: actor_endpoint
+    model: CHANGE_ME_ACTOR
+    revision: CHANGE_ME_ACTOR_REVISION
+    runtime_revision: CHANGE_ME_RUNTIME
+    max_tokens: 8192
+  judge:
+    endpoint: judge_endpoint
+    model: CHANGE_ME_JUDGE
+    revision: CHANGE_ME_JUDGE_REVISION
+    runtime_revision: CHANGE_ME_RUNTIME
+  world_model:
+    endpoint: wm_endpoint
+    model: CHANGE_ME_WM
+    revision: CHANGE_ME_WM_REVISION
+    runtime_revision: CHANGE_ME_RUNTIME
+  policy_extractor:
+    endpoint: wm_endpoint
+    model: CHANGE_ME_POLICY_EXTRACTOR
+    revision: CHANGE_ME_POLICY_REVISION
+    runtime_revision: CHANGE_ME_RUNTIME
+  action_agent:
+    endpoint: actor_endpoint
+    model: CHANGE_ME_ACTION_AGENT
+    revision: CHANGE_ME_ACTION_REVISION
+    runtime_revision: CHANGE_ME_RUNTIME

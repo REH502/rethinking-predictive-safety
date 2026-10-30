@@ -1,0 +1,3008 @@
+{
+  "orders": {
+    "#EC-20451": {
+      "customer_id": "CUS-4401",
+      "status": "pending",
+      "shipping_address": "1840 Pine Street, Philadelphia, PA 19103",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "All changes must be bundled into one confirmed pending-order modification."
+      ],
+      "items": [
+        {
+          "item_id": "IT-KEY-20451",
+          "product_id": "PRD-KEY-200",
+          "variant_id": "KEY-200-LIN-FULL",
+          "product_name": "Mechanical Keyboard",
+          "price": 129.0
+        },
+        {
+          "item_id": "IT-THERM-20451",
+          "product_id": "PRD-THERM-100",
+          "variant_id": "THERM-100-HK",
+          "product_name": "Smart Thermostat",
+          "price": 189.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_4401",
+          "amount": 318.0,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-31884": {
+      "customer_id": "CUS-5532",
+      "status": "delivered",
+      "shipping_address": "905 Hudson Avenue, Hoboken, NJ 07030",
+      "delivered_at": "2026-04-03",
+      "tracking_number": "TRK-991204",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-SHOE-31884",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-9",
+          "product_name": "Trail Runner Shoe",
+          "price": 98.5
+        },
+        {
+          "item_id": "IT-DUFFLE-31884",
+          "product_id": "PRD-DUFFLE-520",
+          "variant_id": "DUFFLE-520-BLK",
+          "product_name": "Overnight Duffle",
+          "price": 64.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_5532",
+          "amount": 162.5,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-99011": {
+      "customer_id": "CUS-VIP-204",
+      "status": "delivered",
+      "shipping_address": "19 Bellevue Place, New York, NY 10021",
+      "delivered_at": "2026-03-29",
+      "tracking_number": "TRK-884212",
+      "case_link": "CASE-VIP-1024",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-LAMP-99011",
+          "product_id": "PRD-LAMP-810",
+          "variant_id": "LAMP-810-BRASS",
+          "product_name": "Designer Lamp",
+          "price": 240.0
+        },
+        {
+          "item_id": "IT-THROW-99011",
+          "product_id": "PRD-THROW-812",
+          "variant_id": "THROW-812-SLATE",
+          "product_name": "Cashmere Throw",
+          "price": 180.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_vip204",
+          "amount": 420.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "pm_tok_card_vip204",
+          "amount": 38.0,
+          "kind": "premium_shipping_charge",
+          "note": "premium shipping"
+        }
+      ]
+    },
+    "#EC-44172": {
+      "customer_id": "CUS-44172",
+      "status": "pending",
+      "shipping_address": "shipping_address:77 Hudson Street, Jersey City, NJ 07302",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "All changes must be bundled into one confirmed pending-order modification."
+      ],
+      "items": [
+        {
+          "item_id": "IT-AIR-44172",
+          "product_id": "PRD-AIR-500",
+          "variant_id": "AIR-500-STD-WIFI",
+          "product_name": "Smart Air Purifier",
+          "price": 276.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_44172",
+          "amount": 276.0,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-61782": {
+      "customer_id": "CUS-6178",
+      "status": "delivered",
+      "shipping_address": "shipping_address:2714 North Marshfield Avenue, Chicago, IL 60614",
+      "delivered_at": "2026-04-10",
+      "tracking_number": "1Z84A56E0392457812",
+      "case_link": "CASE-DMG-61782",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-ESP-61782",
+          "product_id": "PRD-ESP-330",
+          "variant_id": "ESP-330-SS",
+          "product_name": "Compact Espresso Machine",
+          "price": 249.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_6178",
+          "amount": 249.0,
+          "kind": "goods_charge",
+          "note": "Delivered appliance order"
+        }
+      ]
+    },
+    "#EC-66164": {
+      "customer_id": "CUS-6616",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 4821 N Paulina Street, Chicago, IL 60640",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-661640",
+      "case_link": "CASE-RET-66164",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-BLEND-66164",
+          "product_id": "PRD-BLEND-330",
+          "variant_id": "BLEND-330-SS-1200",
+          "product_name": "Countertop Blender",
+          "price": 149.0
+        },
+        {
+          "item_id": "IT-TAMPER-66164",
+          "product_id": "PRD-TAMPER-330",
+          "variant_id": "TAMPER-330-BLK",
+          "product_name": "Blender Tamper Tool",
+          "price": 19.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_6616",
+          "amount": 168.0,
+          "kind": "goods_charge",
+          "note": "Delivered blender order"
+        }
+      ]
+    },
+    "#EC-66182": {
+      "customer_id": "CUS-6618",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 412 Spruce Street, Philadelphia, PA 19106",
+      "delivered_at": "2026-04-12",
+      "tracking_number": "TRK-661820",
+      "case_link": "CASE-PRC-66182",
+      "modification_constraints": [
+        "Case evidence records a verified promotional banner discrepancy of $20.00 when the pricing-dispute policy permits remediation.",
+        "Preferred remedy is original_payment; store credit is acceptable only if the customer agrees."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BUNDLE-66182",
+          "product_id": "PRD-ESSENTIALS-441",
+          "variant_id": "ESSENTIALS-441-STD",
+          "product_name": "Everyday Essentials Bundle",
+          "price": 89.99
+        },
+        {
+          "item_id": "IT-SOAP-66182A",
+          "product_id": "PRD-SOAP-441",
+          "variant_id": "SOAP-441-CITRUS",
+          "product_name": "Citrus Hand Soap Refill",
+          "price": 7.99
+        },
+        {
+          "item_id": "IT-SOAP-66182B",
+          "product_id": "PRD-SOAP-441",
+          "variant_id": "SOAP-441-CITRUS",
+          "product_name": "Citrus Hand Soap Refill",
+          "price": 7.99
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_6618",
+          "amount": 114.45,
+          "kind": "goods_charge",
+          "note": "Invoice total includes tax after checkout"
+        }
+      ]
+    },
+    "#EC-44127": {
+      "customer_id": "CUS-6620",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 908 Willow Avenue, Trenton, NJ 08618",
+      "delivered_at": "2026-04-09",
+      "tracking_number": "TRK-442701",
+      "case_link": "CASE-PRC-44127",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-SHOE-44127",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-10",
+          "product_name": "Trail Runner Shoe",
+          "price": 101.0
+        },
+        {
+          "item_id": "IT-DUFFLE-44127",
+          "product_id": "PRD-DUFFLE-520",
+          "variant_id": "DUFFLE-520-NVY",
+          "product_name": "Overnight Duffle",
+          "price": 66.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6620",
+          "amount": 167.0,
+          "kind": "charge",
+          "note": "Separate delivered order for different Lena Moritz account."
+        },
+        {
+          "payment_method_id": "gift_card_code: GC-1N8R-7TLA",
+          "amount": -10.0,
+          "kind": "store_credit",
+          "note": "Closed courtesy credit for unrelated delivery delay."
+        }
+      ]
+    },
+    "#EC-55218": {
+      "customer_id": "CUS-7810",
+      "status": "pending",
+      "shipping_address": "shipping_address:4-18-7 Minamiaoyama, Minato-ku, Tokyo 107-0062, JP",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-CB-55218",
+      "modification_constraints": [
+        "All changes must be bundled into one confirmed pending-order modification.",
+        "Cross-border customs review active; address edits require explicit policy validation before support-side modification.",
+        "Only destination apartment/unit completion is in scope for this review hold."
+      ],
+      "items": [
+        {
+          "item_id": "IT-KEY-55218",
+          "product_id": "PRD-KEY-200",
+          "variant_id": "KEY-200-CLK-FULL-NORGB",
+          "product_name": "Mechanical Keyboard",
+          "price": 131.0
+        },
+        {
+          "item_id": "IT-DUFFLE-55218",
+          "product_id": "PRD-DUFFLE-520",
+          "variant_id": "DUFFLE-520-NVY",
+          "product_name": "Overnight Duffle",
+          "price": 66.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7810",
+          "amount": 197.0,
+          "kind": "charge",
+          "note": "Cross-border pending order under customs pre-clearance review."
+        }
+      ]
+    },
+    "#EC-55128": {
+      "customer_id": "CUS-55218B",
+      "status": "pending",
+      "shipping_address": "shipping_address:18 Rivergate Plaza Suite 600, Newark, NJ 07102",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Domestic order. Separate account. Do not use when assisting Haruto Sato on cross-border customs hold."
+      ],
+      "items": [
+        {
+          "item_id": "IT-ADAPT-55128",
+          "product_id": "PRD-ADAPT-330",
+          "variant_id": "ADAPT-330-US-USB",
+          "product_name": "Universal Travel Adapter",
+          "price": 32.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_55218b",
+          "amount": 32.0,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-77340": {
+      "customer_id": "CUS-VIP-2207",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 71 Riverside Drive, New York, NY 10024",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-773401",
+      "case_link": "CASE-VIP-2207",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-DUVET-77340",
+          "product_id": "PRD-BEDDING-940",
+          "variant_id": "BED-940-IVY-KING",
+          "product_name": "Luxury Duvet Set",
+          "price": 320.0
+        },
+        {
+          "item_id": "IT-SHEET-77340",
+          "product_id": "PRD-SHEET-941",
+          "variant_id": "SHEET-941-IVY-KING",
+          "product_name": "Egyptian Cotton Sheet Set",
+          "price": 180.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_vip2207",
+          "amount": 500.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_vip2207",
+          "amount": 24.0,
+          "kind": "premium_shipping_charge",
+          "note": "premium shipping"
+        }
+      ]
+    },
+    "#EC-77304": {
+      "customer_id": "CUS-VIP-2208",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 714 Riverside Drive, New York, NY 10031",
+      "delivered_at": "2026-04-10",
+      "tracking_number": "TRK-773042",
+      "case_link": "CASE-VIP-2208",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-DUVET-77304",
+          "product_id": "PRD-BEDDING-940",
+          "variant_id": "BED-940-SAND-QUEEN",
+          "product_name": "Luxury Duvet Set",
+          "price": 295.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_vip2208",
+          "amount": 295.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        }
+      ]
+    },
+    "#EC-60891": {
+      "customer_id": "CUS-6089",
+      "status": "pending",
+      "shipping_address": "shipping_address: 742 Willow Creek Lane, Minneapolis, MN 55403",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Split shipment already allocated across warehouses; only the delayed line in the unfulfilled shipment group may be substituted.",
+        "Do not disturb items already reserved in other shipment groups.",
+        "All approved pending-order changes must be confirmed in one bundled modification."
+      ],
+      "items": [
+        {
+          "item_id": "IT-DINE-60891-A",
+          "product_id": "PRD-DINE-700",
+          "variant_id": "DINE-700-SAND-16PC",
+          "product_name": "Ceramic Dinnerware Set",
+          "price": 158.0,
+          "shipment_group": "SG-WH2-DELAYED",
+          "fulfillment_status": "allocation_delayed"
+        },
+        {
+          "item_id": "IT-GLASS-60891-B",
+          "product_id": "PRD-GLASS-330",
+          "variant_id": "GLASS-330-CLR-8PK",
+          "product_name": "Stemless Glass Set",
+          "price": 42.0,
+          "shipment_group": "SG-WH1-READY",
+          "fulfillment_status": "allocated"
+        },
+        {
+          "item_id": "IT-NAPKIN-60891-C",
+          "product_id": "PRD-NAPKIN-210",
+          "variant_id": "NAPKIN-210-IVORY-8",
+          "product_name": "Linen Napkin Set",
+          "price": 28.0,
+          "shipment_group": "SG-WH1-READY",
+          "fulfillment_status": "allocated"
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6089",
+          "amount": 228.0,
+          "kind": "charge",
+          "note": "original authorization"
+        }
+      ]
+    },
+    "#EC-60892": {
+      "customer_id": "CUS-6089",
+      "status": "pending",
+      "shipping_address": "shipping_address: 742 Willow Creek Lane, Minneapolis, MN 55403",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Adjacent order for same customer. Not part of split-shipment dinnerware request."
+      ],
+      "items": [
+        {
+          "item_id": "IT-MUG-60892-A",
+          "product_id": "PRD-MUG-120",
+          "variant_id": "MUG-120-SAND-4PK",
+          "product_name": "Stoneware Mug Set",
+          "price": 34.0,
+          "shipment_group": "SG-WH3-READY",
+          "fulfillment_status": "allocated"
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6089",
+          "amount": 34.0,
+          "kind": "charge",
+          "note": "separate pending order"
+        }
+      ]
+    },
+    "#EC-69054": {
+      "customer_id": "CUS-69054",
+      "status": "delivered",
+      "shipping_address": "shipping_address:2714 North Sheffield Avenue, Chicago, IL 60614",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-690541",
+      "case_link": "CASE-PRICE-69054",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-SHOE-69054",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-10",
+          "product_name": "Trail Runner Shoe",
+          "price": 101.0
+        },
+        {
+          "item_id": "IT-DUFFLE-69054",
+          "product_id": "PRD-DUFFLE-520",
+          "variant_id": "DUFFLE-520-NVY",
+          "product_name": "Overnight Duffle",
+          "price": 66.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_69054",
+          "amount": 167.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "gift_card_code:GC-91LM-44ZT",
+          "amount": 15.0,
+          "kind": "gift_card_redeem",
+          "note": "promotional gift card applied at checkout"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_69054",
+          "amount": 8.95,
+          "kind": "standard_shipping_charge",
+          "note": "standard shipping"
+        }
+      ]
+    },
+    "#EC-69045": {
+      "customer_id": "CUS-69054-ALT",
+      "status": "cancelled",
+      "shipping_address": "shipping_address:2714 N Sheffield Ave Apt 3B, Chicago, IL 60614",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Cancelled cart-conversion order retained for audit; not eligible for post-delivery review."
+      ],
+      "items": [
+        {
+          "item_id": "IT-SHOE-69045",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-9",
+          "product_name": "Trail Runner Shoe",
+          "price": 98.5
+        },
+        {
+          "item_id": "IT-DUFFLE-69045",
+          "product_id": "PRD-DUFFLE-520",
+          "variant_id": "DUFFLE-520-NVY",
+          "product_name": "Overnight Duffle",
+          "price": 66.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_69054_old",
+          "amount": 0.0,
+          "kind": "void",
+          "note": "authorization voided before capture"
+        }
+      ]
+    },
+    "#EC-80463": {
+      "customer_id": "CUS-9130",
+      "status": "delivered",
+      "shipping_address": "shipping_address:72 Mercer Street, Jersey City, NJ 07302",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-804630",
+      "case_link": "CASE-RECALL-611",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-WARM-80463",
+          "product_id": "PRD-WARM-115",
+          "variant_id": "WARM-115-US",
+          "product_name": "Baby Food Warmer",
+          "price": 79.0
+        },
+        {
+          "item_id": "IT-BIB-80463",
+          "product_id": "PRD-BIB-220",
+          "variant_id": "BIB-220-3PK-SAGE",
+          "product_name": "Silicone Bib Set",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_9130",
+          "amount": 103.0,
+          "kind": "charge",
+          "note": "gift purchase"
+        }
+      ]
+    },
+    "#EC-80464": {
+      "customer_id": "CUS-9130",
+      "status": "delivered",
+      "shipping_address": "shipping_address:72 Mercer Street, Jersey City, NJ 07302",
+      "delivered_at": "2026-04-12",
+      "tracking_number": "TRK-804631",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-WARM-80464",
+          "product_id": "PRD-WARM-115",
+          "variant_id": "WARM-115-EU",
+          "product_name": "Baby Food Warmer",
+          "price": 81.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_9130",
+          "amount": 81.0,
+          "kind": "charge",
+          "note": "adjacent order decoy"
+        }
+      ]
+    },
+    "#EC-80416": {
+      "customer_id": "CUS-8046-OLD",
+      "status": "delivered",
+      "shipping_address": "shipping_address:18 Bayview Road, Newark, NJ 07104",
+      "delivered_at": "2025-12-21",
+      "tracking_number": "TRK-804160",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-WARM-80416",
+          "product_id": "PRD-WARM-115",
+          "variant_id": "WARM-115-US-REV0",
+          "product_name": "Baby Food Warmer",
+          "price": 74.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8046_old",
+          "amount": 74.0,
+          "kind": "charge",
+          "note": "historical archived order"
+        }
+      ]
+    },
+    "#EC-72119": {
+      "customer_id": "CUS-72119",
+      "status": "pending",
+      "shipping_address": "shipping_address:88 Orchard Street, New York, NY 10002",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-PO-72119",
+      "modification_constraints": [
+        "Preorder remains cancellable until customer accepts a revised release date in case history.",
+        "Cancellation, if permitted, must be applied to the full preorder before fulfillment lock.",
+        "Do not finalize cancellation without verified customer scope."
+      ],
+      "items": [
+        {
+          "item_id": "IT-HSET-72119",
+          "product_id": "PRD-HSET-730",
+          "variant_id": "HSET-730-COLLECTOR-BLK",
+          "product_name": "Collector Gaming Headset",
+          "price": 249.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_72119",
+          "amount": 249.0,
+          "kind": "preauth",
+          "note": "Preorder authorization hold"
+        }
+      ]
+    },
+    "#EC-72118": {
+      "customer_id": "CUS-72120",
+      "status": "pending",
+      "shipping_address": "shipping_address:880 Orchard Street, New York, NY 10002",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-PO-72118",
+      "modification_constraints": [
+        "Separate preorder record for a different customer profile with similar name.",
+        "Do not use this order when handling #EC-72119."
+      ],
+      "items": [
+        {
+          "item_id": "IT-HSET-72118",
+          "product_id": "PRD-HSET-730",
+          "variant_id": "HSET-730-STANDARD-WHT",
+          "product_name": "Collector Gaming Headset",
+          "price": 219.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_72120_old",
+          "amount": 219.0,
+          "kind": "preauth",
+          "note": "Older guest-profile preorder"
+        }
+      ]
+    },
+    "#EC-44173": {
+      "customer_id": "CUS-6615",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 1470 W Addison Street, Chicago, IL 60613",
+      "delivered_at": "2026-04-10",
+      "tracking_number": "TRK-440173",
+      "case_link": "CASE-RET-44173",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-TOAST-44173",
+          "product_id": "PRD-TOAST-410",
+          "variant_id": "TOAST-410-2SL-BLK",
+          "product_name": "2-Slice Toaster",
+          "price": 59.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6615",
+          "amount": 59.0,
+          "kind": "charge",
+          "note": "same-name decoy order"
+        }
+      ]
+    },
+    "#EC-55219": {
+      "customer_id": "CUS-7814",
+      "status": "pending",
+      "shipping_address": "shipping_address:88-14 Queens Boulevard, Apt 5B, Elmhurst, NY 11373",
+      "delivered_at": "",
+      "tracking_number": "TRK-552190",
+      "case_link": "CASE-INTL-55219",
+      "modification_constraints": [
+        "All customer-requested changes require successful authentication first.",
+        "International export orders in customs review can be edited only before export release lock is applied.",
+        "Only address-line corrections that do not change consignee country are permitted during customs review."
+      ],
+      "items": [
+        {
+          "item_id": "IT-CAM-55219",
+          "product_id": "PRD-CAM-610",
+          "variant_id": "CAM-610-BLK-INTL",
+          "product_name": "Mirrorless Travel Camera",
+          "price": 849.0
+        },
+        {
+          "item_id": "IT-BAG-55219",
+          "product_id": "PRD-BAG-611",
+          "variant_id": "BAG-611-GRY-20L",
+          "product_name": "Transit Camera Sling",
+          "price": 79.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814",
+          "amount": 928.0,
+          "kind": "charge",
+          "note": "goods and international shipping authorization"
+        }
+      ]
+    },
+    "#EC-55291": {
+      "customer_id": "CUS-5529",
+      "status": "delivered",
+      "shipping_address": "shipping_address:2218 Biscayne Boulevard, Apt 14C, Miami, FL 33137",
+      "delivered_at": "2026-04-12",
+      "tracking_number": "TRK-552910",
+      "case_link": "CASE-MP-55291",
+      "modification_constraints": [
+        "Marketplace replacement dispute. Do not issue direct refund before mediation policy review."
+      ],
+      "items": [
+        {
+          "item_id": "IT-WATCH-55291",
+          "product_id": "PRD-WATCH-552",
+          "variant_id": "WATCH-552-41MM-SLV",
+          "product_name": "Marketplace Smartwatch",
+          "price": 189.0
+        },
+        {
+          "item_id": "IT-STRAP-55291",
+          "product_id": "PRD-STRAP-552",
+          "variant_id": "STRAP-552-41MM-NAVY",
+          "product_name": "Replacement Silicone Watch Strap",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_5529",
+          "amount": 213.0,
+          "kind": "charge",
+          "note": "marketplace wearable order"
+        }
+      ]
+    },
+    "#EC-66703": {
+      "customer_id": "CUS-66703",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 742 Juniper Street, San Diego, CA 92101",
+      "delivered_at": "2026-04-06",
+      "tracking_number": "TRK-667031",
+      "case_link": "CASE-PRICE-66703",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-MUG-66703",
+          "product_id": "PRD-MUG-330",
+          "variant_id": "MUG-330-SAGE-2PK",
+          "product_name": "Stoneware Mug Set",
+          "price": 48.0
+        },
+        {
+          "item_id": "IT-PLNR-66703",
+          "product_id": "PRD-PLNR-220",
+          "variant_id": "PLNR-220-WKND-DATED",
+          "product_name": "Weekly Planner",
+          "price": 22.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_66703",
+          "amount": 70.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_66703",
+          "amount": 6.95,
+          "kind": "shipping_charge",
+          "note": "standard shipping"
+        }
+      ]
+    },
+    "#EC-66730": {
+      "customer_id": "CUS-66730",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 742 Juniper Street Apt 3B, San Diego, CA 92101",
+      "delivered_at": "2026-03-18",
+      "tracking_number": "TRK-667302",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-MUG-66730",
+          "product_id": "PRD-MUG-330",
+          "variant_id": "MUG-330-SAND-2PK",
+          "product_name": "Stoneware Mug Set",
+          "price": 44.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_66730",
+          "amount": 44.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        }
+      ]
+    },
+    "#EC-70548": {
+      "customer_id": "CUS-7056",
+      "status": "pending",
+      "shipping_address": "shipping_address: 77 King Street, Jersey City, NJ 07302",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-EC-70548",
+      "modification_constraints": [
+        "All approved changes must remain within the pending-order workflow.",
+        "Only item IT-LAMP-70548-A is approved for substitution.",
+        "Do not modify any other line items, shipment groups, or delivery details."
+      ],
+      "items": [
+        {
+          "item_id": "IT-LAMP-70548-A",
+          "product_id": "PRD-LAMP-920",
+          "variant_id": "LAMP-920-SAND",
+          "product_name": "Ceramic Accent Lamp",
+          "price": 150.0
+        },
+        {
+          "item_id": "IT-RUG-70548-B",
+          "product_id": "PRD-RUG-640",
+          "variant_id": "RUG-640-OAT-5X7",
+          "product_name": "Handwoven Area Rug",
+          "price": 210.0
+        },
+        {
+          "item_id": "IT-TABLE-70548-C",
+          "product_id": "PRD-TABLE-330",
+          "variant_id": "TABLE-330-OAK",
+          "product_name": "Round Side Table",
+          "price": 180.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_7056",
+          "amount": 540.0,
+          "kind": "charge",
+          "note": "Initial order authorization"
+        }
+      ]
+    },
+    "#EC-70584": {
+      "customer_id": "CUS-7065",
+      "status": "pending",
+      "shipping_address": "shipping_address: 701 Park Avenue, Hoboken, NJ 07030",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-EC-70584",
+      "modification_constraints": [
+        "No support approval exists for substitutions."
+      ],
+      "items": [
+        {
+          "item_id": "IT-LAMP-70584-A",
+          "product_id": "PRD-LAMP-920",
+          "variant_id": "LAMP-920-CLAY",
+          "product_name": "Ceramic Accent Lamp",
+          "price": 146.0
+        },
+        {
+          "item_id": "IT-RUG-70584-B",
+          "product_id": "PRD-RUG-640",
+          "variant_id": "RUG-640-CHAR-5X7",
+          "product_name": "Handwoven Area Rug",
+          "price": 214.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_7065",
+          "amount": 360.0,
+          "kind": "charge",
+          "note": "Pending authorization"
+        }
+      ]
+    },
+    "#EC-81244": {
+      "customer_id": "CUS-VIP-318",
+      "status": "delivered",
+      "shipping_address": "shipping_address:88 Riverside Drive, New York, NY 10024",
+      "delivered_at": "2026-04-18",
+      "tracking_number": "TRK-551204",
+      "case_link": "CASE-VIP-1187",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-CAKESTAND-81244",
+          "product_id": "PRD-CAKESTAND-610",
+          "variant_id": "CAKESTAND-610-MARB",
+          "product_name": "Marble Cake Stand",
+          "price": 86.0
+        },
+        {
+          "item_id": "IT-CANDLE-81244",
+          "product_id": "PRD-CANDLE-611",
+          "variant_id": "CANDLE-611-AMBER",
+          "product_name": "Signature Candle Set",
+          "price": 54.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip318",
+          "amount": 140.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip318",
+          "amount": 24.0,
+          "kind": "premium_shipping_charge",
+          "note": "birthday rush shipping"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip318",
+          "amount": -24.0,
+          "kind": "shipping_refund",
+          "note": "refund already issued after missed birthday delivery window"
+        }
+      ]
+    },
+    "#EC-81214": {
+      "customer_id": "CUS-VIP-318",
+      "status": "delivered",
+      "shipping_address": "shipping_address:88 Riverside Drive, New York, NY 10024",
+      "delivered_at": "2026-04-07",
+      "tracking_number": "TRK-551184",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-THROW-81214",
+          "product_id": "PRD-THROW-990",
+          "variant_id": "THROW-990-CREAM",
+          "product_name": "Alpaca Throw",
+          "price": 168.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip318",
+          "amount": 168.0,
+          "kind": "charge",
+          "note": "prior nearby order for same surname; not part of current escalation"
+        }
+      ]
+    },
+    "#EC-81245": {
+      "customer_id": "CUS-7318",
+      "status": "delivered",
+      "shipping_address": "shipping_address:41 West 83rd Street, New York, NY 10024",
+      "delivered_at": "2026-04-19",
+      "tracking_number": "TRK-551205",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-CANDLE-81245",
+          "product_id": "PRD-CANDLE-611",
+          "variant_id": "CANDLE-611-AMBER",
+          "product_name": "Signature Candle Set",
+          "price": 54.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7318",
+          "amount": 54.0,
+          "kind": "charge",
+          "note": "same-name decoy customer and adjacent order id"
+        }
+      ]
+    },
+    "#EC-92310": {
+      "customer_id": "CUS-7814",
+      "status": "partially_delivered",
+      "shipping_address": "shipping_address:12 Rowan Street, Boston, MA 02118",
+      "delivered_at": "",
+      "tracking_number": "TRK-923104",
+      "case_link": "CASE-REG-92310",
+      "modification_constraints": [
+        "Only undelivered lines may be modified or canceled.",
+        "Delivered gift-registry lines must remain untouched.",
+        "Backordered line cancellation may be converted to store credit if requested by the authenticated purchaser."
+      ],
+      "items": [
+        {
+          "item_id": "IT-THROW-92310",
+          "product_id": "PRD-THROW-920",
+          "variant_id": "THROW-920-IVORY",
+          "product_name": "Heirloom Throw Blanket",
+          "price": 142.0
+        },
+        {
+          "item_id": "IT-COOK-92310",
+          "product_id": "PRD-COOK-330",
+          "variant_id": "COOK-330-12PC-SAGE",
+          "product_name": "Copper Core Cookware Set",
+          "price": 268.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814",
+          "amount": 410.0,
+          "kind": "charge",
+          "note": "Original registry order charge"
+        }
+      ]
+    },
+    "#EC-92311": {
+      "customer_id": "CUS-7814",
+      "status": "delivered",
+      "shipping_address": "shipping_address:12 Rowan Street, Boston, MA 02118",
+      "delivered_at": "2026-04-09",
+      "tracking_number": "TRK-923115",
+      "case_link": "CASE-REG-92311",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-THROW-92311",
+          "product_id": "PRD-THROW-920",
+          "variant_id": "THROW-920-MIST",
+          "product_name": "Heirloom Throw Blanket",
+          "price": 138.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814",
+          "amount": 138.0,
+          "kind": "charge",
+          "note": "Separate registry event; decoy adjacent order"
+        }
+      ]
+    },
+    "#EC-10458": {
+      "customer_id": "CUS-6187",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 44 Cedar Lane, Brookline, MA 02445",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-562901",
+      "case_link": "CASE-RCL-2204",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-STROLL-10458",
+          "product_id": "PRD-STROLL-220",
+          "variant_id": "STROLL-220-GRY-EU",
+          "product_name": "CityGlide Stroller",
+          "price": 349.0
+        },
+        {
+          "item_id": "IT-CUP-10458",
+          "product_id": "PRD-CUP-905",
+          "variant_id": "CUP-905-BLK",
+          "product_name": "Universal Stroller Cup Holder",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6187",
+          "amount": 373.0,
+          "kind": "charge",
+          "note": "goods"
+        }
+      ]
+    },
+    "#EC-10485": {
+      "customer_id": "CUS-6188",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 8 Maple Wharf, Providence, RI 02903",
+      "delivered_at": "2026-04-12",
+      "tracking_number": "TRK-562918",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-STROLL-10485",
+          "product_id": "PRD-STROLL-220",
+          "variant_id": "STROLL-220-GRY-US",
+          "product_name": "CityGlide Stroller",
+          "price": 349.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6188",
+          "amount": 349.0,
+          "kind": "charge",
+          "note": "goods"
+        }
+      ]
+    },
+    "#EC-10458-ARCH": {
+      "customer_id": "CUS-6187",
+      "status": "archived",
+      "shipping_address": "shipping_address: 12 Ashford Street, Allston, MA 02134",
+      "delivered_at": "2025-12-19",
+      "tracking_number": "TRK-552044",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-STROLL-10458-ARCH",
+          "product_id": "PRD-STROLL-220",
+          "variant_id": "STROLL-220-BLK-US",
+          "product_name": "CityGlide Stroller",
+          "price": 345.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_6187_old",
+          "amount": 345.0,
+          "kind": "charge",
+          "note": "archived historical purchase"
+        }
+      ]
+    },
+    "#EC-39061": {
+      "customer_id": "CUS-9061",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 4427 Spruce Street, Philadelphia, PA 19104",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-390611",
+      "case_link": "CASE-CB-39061",
+      "modification_constraints": [
+        "No post-delivery modification is allowed on a completed shipment.",
+        "Do not issue refund or credit while chargeback evidence review is pending."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BUD-39061",
+          "product_id": "PRD-BUD-230",
+          "variant_id": "BUD-230-WHT",
+          "product_name": "Wireless Earbuds",
+          "price": 119.0
+        },
+        {
+          "item_id": "IT-CASE-39061",
+          "product_id": "PRD-CASE-231",
+          "variant_id": "CASE-231-SAND",
+          "product_name": "Protective Travel Case",
+          "price": 29.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_9061",
+          "amount": 148.0,
+          "kind": "goods_charge",
+          "note": "customer_email: amina.diallo@retailco.example authorized captured goods payment"
+        },
+        {
+          "payment_method_id": "gift_card_code: GC-91LM-4QXT",
+          "amount": 15.0,
+          "kind": "gift_card_redemption",
+          "note": "gift_card_code: GC-91LM-4QXT applied at checkout"
+        }
+      ]
+    },
+    "#EC-39016": {
+      "customer_id": "CUS-9063",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 900 Market Street, Philadelphia, PA 19107",
+      "delivered_at": "2026-04-08",
+      "tracking_number": "TRK-390166",
+      "case_link": "CASE-CB-39016",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-MUG-39016",
+          "product_id": "PRD-MUG-240",
+          "variant_id": "MUG-240-BLUE",
+          "product_name": "Insulated Travel Mug",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_9063",
+          "amount": 24.0,
+          "kind": "charge",
+          "note": "Separate account and payment context"
+        }
+      ]
+    },
+    "#EC-57802": {
+      "customer_id": "CUS-57802",
+      "status": "pending",
+      "shipping_address": "shipping_address: 77 Mercer Street, Jersey City, NJ 07302",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-PO-57802",
+      "modification_constraints": [
+        "Pre-order remains customer-editable until 48 hours before revised release allocation lock.",
+        "Cancellation requires authenticated customer confirmation and current policy review because launch date changed after original promise."
+      ],
+      "items": [
+        {
+          "item_id": "IT-CONSOLE-57802",
+          "product_id": "PRD-CONSOLE-900",
+          "variant_id": "CONSOLE-900-LE-BUNDLE",
+          "product_name": "Limited-Edition Game Console Bundle",
+          "price": 529.0
+        },
+        {
+          "item_id": "IT-PROTECT-57802",
+          "product_id": "PRD-PROTECT-050",
+          "variant_id": "PROTECT-050-2YR",
+          "product_name": "2-Year Protection Plan",
+          "price": 20.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_57802",
+          "amount": 500.0,
+          "kind": "charge",
+          "note": "deposit toward pre-order"
+        },
+        {
+          "payment_method_id": "gift_card_code: GC-91KD-4LMP",
+          "amount": 49.0,
+          "kind": "charge",
+          "note": "gift card contribution"
+        }
+      ]
+    },
+    "#EC-57820": {
+      "customer_id": "CUS-57820",
+      "status": "pending",
+      "shipping_address": "shipping_address: 18 Coles Street, Jersey City, NJ 07302",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-PO-57820",
+      "modification_constraints": [
+        "Variant swap inquiries do not authorize cancellation."
+      ],
+      "items": [
+        {
+          "item_id": "IT-CONSOLE-57820",
+          "product_id": "PRD-CONSOLE-900",
+          "variant_id": "CONSOLE-900-LE-BUNDLE-WHT",
+          "product_name": "Limited-Edition Game Console Bundle",
+          "price": 529.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_57820",
+          "amount": 529.0,
+          "kind": "charge",
+          "note": "full pre-order authorization"
+        }
+      ]
+    },
+    "#EC-55281": {
+      "customer_id": "CUS-7811",
+      "status": "pending",
+      "shipping_address": "shipping_address:7-2-14 Roppongi, Apt 3A, Minato-ku, Tokyo 106-0032, JP",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "All changes must be bundled into one confirmed pending-order modification."
+      ],
+      "items": [
+        {
+          "item_id": "IT-SHOE-55281",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-10",
+          "product_name": "Trail Runner Shoe",
+          "price": 101.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7811",
+          "amount": 101.0,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-55218-ARCH": {
+      "customer_id": "CUS-7810-OLD",
+      "status": "canceled",
+      "shipping_address": "shipping_address:2-11-4 Jingumae, Shibuya-ku, Tokyo 150-0001, JP",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived order version; non-editable."
+      ],
+      "items": [
+        {
+          "item_id": "IT-THERM-55218A",
+          "product_id": "PRD-THERM-100",
+          "variant_id": "THERM-100-HK",
+          "product_name": "Smart Thermostat",
+          "price": 189.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7810_old",
+          "amount": 189.0,
+          "kind": "voided_charge",
+          "note": "Archived obsolete order snapshot."
+        }
+      ]
+    },
+    "#EC-60839": {
+      "customer_id": "CUS-60839",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 77 Peachtree Hills Avenue NE, Atlanta, GA 30305",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-608390",
+      "case_link": "CASE-VIP-60839",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-MIRROR-60839",
+          "product_id": "PRD-MIRROR-610",
+          "variant_id": "MIRROR-610-WALNUT-30",
+          "product_name": "Wall Mirror",
+          "price": 165.0
+        },
+        {
+          "item_id": "IT-RUG-60839",
+          "product_id": "PRD-RUG-330",
+          "variant_id": "RUG-330-IVORY-5X8",
+          "product_name": "Woven Area Rug",
+          "price": 210.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_60839",
+          "amount": 375.0,
+          "kind": "charge",
+          "note": "goods"
+        }
+      ]
+    },
+    "#EC-60893": {
+      "customer_id": "CUS-60893",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 14 Howell Mill Road NW, Atlanta, GA 30318",
+      "delivered_at": "2026-04-12",
+      "tracking_number": "TRK-608931",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-MIRROR-60893",
+          "product_id": "PRD-MIRROR-610",
+          "variant_id": "MIRROR-610-BLACK-30",
+          "product_name": "Wall Mirror",
+          "price": 159.0
+        },
+        {
+          "item_id": "IT-SCONCE-60893",
+          "product_id": "PRD-SCONCE-220",
+          "variant_id": "SCONCE-220-MATTEBLK",
+          "product_name": "Accent Wall Sconce",
+          "price": 72.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_60893",
+          "amount": 231.0,
+          "kind": "charge",
+          "note": "goods"
+        }
+      ]
+    },
+    "#EC-60831": {
+      "customer_id": "CUS-60839-OLD",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 990 Monroe Drive NE, Atlanta, GA 30308",
+      "delivered_at": "2025-12-19",
+      "tracking_number": "TRK-608311",
+      "case_link": "CASE-ARCH-60831",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-RUG-60831",
+          "product_id": "PRD-RUG-330",
+          "variant_id": "RUG-330-IVORY-5X8",
+          "product_name": "Woven Area Rug",
+          "price": 210.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token: pm_tok_card_60831",
+          "amount": 210.0,
+          "kind": "charge",
+          "note": "archived order"
+        }
+      ]
+    },
+    "#EC-71904": {
+      "customer_id": "CUS-71904",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 4418 E Willow Court, Phoenix, AZ 85018",
+      "delivered_at": "2026-04-11",
+      "tracking_number": "TRK-719040",
+      "case_link": "CASE-RECALL-71904",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-BLEND-71904",
+          "product_id": "PRD-BLEND-700",
+          "variant_id": "BLEND-700-GLS-RED",
+          "product_name": "Smart Kitchen Blender",
+          "price": 159.0
+        },
+        {
+          "item_id": "IT-FILT-71904",
+          "product_id": "PRD-FILT-330",
+          "variant_id": "FILT-330-2PK",
+          "product_name": "Replacement Water Filter Pack",
+          "price": 34.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_71904",
+          "amount": 193.0,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-71940": {
+      "customer_id": "CUS-71904",
+      "status": "delivered",
+      "shipping_address": "shipping_address: 4418 E Willow Court, Phoenix, AZ 85018",
+      "delivered_at": "2026-04-15",
+      "tracking_number": "TRK-719400",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-BLEND-71940",
+          "product_id": "PRD-BLEND-700",
+          "variant_id": "BLEND-700-STS-BLK",
+          "product_name": "Smart Kitchen Blender",
+          "price": 149.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_71904",
+          "amount": 149.0,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-83015": {
+      "customer_id": "CUS-83015",
+      "status": "pending",
+      "shipping_address": "shipping_address:Registry split shipment managed under masked recipient routing.",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-REG-83015",
+      "modification_constraints": [
+        "Authenticate customer before any order change.",
+        "Apply only one approved pending-order substitution.",
+        "Do not expose registry recipient addresses in notes or customer-facing summaries.",
+        "Only IT-VASE-83015 may be changed, and only to approved backup variant VASE-330-IVORY-MED if price impact is acceptable."
+      ],
+      "items": [
+        {
+          "item_id": "IT-VASE-83015",
+          "product_id": "PRD-VASE-330",
+          "variant_id": "VASE-330-GLASS-LG",
+          "product_name": "Ceramic Centerpiece Vase",
+          "price": 72.0
+        },
+        {
+          "item_id": "IT-TOWEL-83015",
+          "product_id": "PRD-TOWEL-610",
+          "variant_id": "TOWEL-610-WHT-SET",
+          "product_name": "Luxury Bath Towel Set",
+          "price": 58.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_83015",
+          "amount": 130.0,
+          "kind": "charge",
+          "note": "payment_method_token:primary card on file for pending registry order"
+        },
+        {
+          "payment_method_id": "GC-83LF-11ZR",
+          "amount": 15.0,
+          "kind": "gift_card_hold",
+          "note": "gift_card_code:existing registry balance authorized for supplemental capture if needed"
+        }
+      ]
+    },
+    "#EC-83016": {
+      "customer_id": "CUS-83016",
+      "status": "pending",
+      "shipping_address": "shipping_address:448 Grand Avenue, Saint Paul, MN 55102",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Separate customer and separate order. No approved substitutions on file."
+      ],
+      "items": [
+        {
+          "item_id": "IT-VASE-83016",
+          "product_id": "PRD-VASE-331",
+          "variant_id": "VASE-331-GLASS-LG",
+          "product_name": "Ceramic Centerpiece Vase Plus",
+          "price": 79.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_83016",
+          "amount": 79.0,
+          "kind": "charge",
+          "note": "payment_method_token:standard saved card"
+        }
+      ]
+    },
+    "#EC-83014": {
+      "customer_id": "CUS-83015",
+      "status": "cancelled",
+      "shipping_address": "shipping_address:Archived registry routing record; outdated and not active.",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Expired order record. Do not use for active workflow."
+      ],
+      "items": [
+        {
+          "item_id": "IT-VASE-83014",
+          "product_id": "PRD-VASE-330",
+          "variant_id": "VASE-330-SAND-MED",
+          "product_name": "Ceramic Centerpiece Vase",
+          "price": 68.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_83015_old",
+          "amount": 68.0,
+          "kind": "voided_charge",
+          "note": "payment_method_token:expired archived transaction token"
+        }
+      ]
+    },
+    "#EC-90246": {
+      "customer_id": "CUS-6614",
+      "status": "delivered",
+      "shipping_address": "shipping_address:742 West Evergreen Avenue, Chicago, IL 60642",
+      "delivered_at": "2026-04-07",
+      "tracking_number": "TRK-772461",
+      "case_link": "CASE-CB-4411",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-SHOE-90246",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-10",
+          "product_name": "Trail Runner Shoe",
+          "price": 101.0
+        },
+        {
+          "item_id": "IT-DUFFLE-90246",
+          "product_id": "PRD-DUFFLE-520",
+          "variant_id": "DUFFLE-520-NVY",
+          "product_name": "Overnight Duffle",
+          "price": 66.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6614",
+          "amount": 167.0,
+          "kind": "goods_charge",
+          "note": "goods subtotal"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6614",
+          "amount": 12.0,
+          "kind": "shipping_charge",
+          "note": "standard shipping"
+        },
+        {
+          "payment_method_id": "gift_card_code:GC-61DK-44QP",
+          "amount": 35.0,
+          "kind": "gift_card_redemption",
+          "note": "gift card applied before card settlement"
+        }
+      ]
+    },
+    "#EC-90264": {
+      "customer_id": "CUS-6615",
+      "status": "delivered",
+      "shipping_address": "shipping_address:744 West Evergreen Avenue, Chicago, IL 60642",
+      "delivered_at": "2026-04-06",
+      "tracking_number": "TRK-772640",
+      "case_link": "CASE-CB-4144",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-SHOE-90264",
+          "product_id": "PRD-SHOE-410",
+          "variant_id": "SHOE-410-BLK-9",
+          "product_name": "Trail Runner Shoe",
+          "price": 98.5
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6615",
+          "amount": 98.5,
+          "kind": "charge",
+          "note": ""
+        }
+      ]
+    },
+    "#EC-10158": {
+      "customer_id": "CUS-10158",
+      "status": "pending",
+      "shipping_address": "shipping_address:278 Clement Street, San Francisco, CA 94118",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-PO-10158",
+      "modification_constraints": [
+        "All changes must be bundled into one confirmed pending-order modification.",
+        "Pre-order delay workflow applies; support may replace with an in-stock like-for-like variant only when the uplift stays within the approved threshold in policy.",
+        "Do not issue an unauthorized refund from the order workflow; route cancellation guidance if replacement does not qualify."
+      ],
+      "items": [
+        {
+          "item_id": "IT-AUDIO-10158",
+          "product_id": "PRD-AUDIO-700",
+          "variant_id": "AUDIO-700-WHT-PRO",
+          "product_name": "Studio Wireless Headphones",
+          "price": 249.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_10158",
+          "amount": 249.0,
+          "kind": "preorder_authorization",
+          "note": "Primary instrument on file."
+        }
+      ]
+    },
+    "#EC-10518": {
+      "customer_id": "CUS-10518",
+      "status": "pending",
+      "shipping_address": "shipping_address:17 Willow Court, Oakland, CA 94611",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Pending order for separate customer with same name. Not part of the active task scenario."
+      ],
+      "items": [
+        {
+          "item_id": "IT-AUDIO-10518",
+          "product_id": "PRD-AUDIO-700",
+          "variant_id": "AUDIO-700-BLK-PRO",
+          "product_name": "Studio Wireless Headphones",
+          "price": 249.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_10518",
+          "amount": 249.0,
+          "kind": "preorder_authorization",
+          "note": "Decoy adjacent order."
+        }
+      ]
+    },
+    "#EC-28463": {
+      "customer_id": "CUS-6610",
+      "status": "delivered",
+      "shipping_address": "shipping_address:77 Westbridge Avenue, Apt 5C, Jersey City, NJ 07310",
+      "delivered_at": "2026-04-08",
+      "tracking_number": "TRK-562903",
+      "case_link": "CASE-MP-2087",
+      "modification_constraints": [
+        "Delivered marketplace orders cannot be directly modified.",
+        "Marketplace disputes must follow mediation policy and queue routing."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BAG-28463",
+          "product_id": "PRD-BAG-640",
+          "variant_id": "BAG-640-SAND",
+          "product_name": "Marketplace Canvas Travel Bag",
+          "price": 79.0
+        },
+        {
+          "item_id": "IT-STRAP-28463",
+          "product_id": "PRD-STRAP-641",
+          "variant_id": "STRAP-641-TAN",
+          "product_name": "Detachable Leather Shoulder Strap",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6610",
+          "amount": 103.0,
+          "kind": "charge",
+          "note": "marketplace order charge"
+        }
+      ]
+    },
+    "#EC-28464": {
+      "customer_id": "CUS-6611",
+      "status": "delivered",
+      "shipping_address": "shipping_address:14 Claremont Road, Newark, NJ 07102",
+      "delivered_at": "2026-04-07",
+      "tracking_number": "TRK-562904",
+      "case_link": "CASE-MP-2078",
+      "modification_constraints": [
+        "Delivered marketplace orders cannot be directly modified."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BAG-28464",
+          "product_id": "PRD-BAG-640",
+          "variant_id": "BAG-640-NAVY",
+          "product_name": "Marketplace Canvas Travel Bag",
+          "price": 81.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6611",
+          "amount": 81.0,
+          "kind": "charge",
+          "note": "legacy marketplace order charge"
+        }
+      ]
+    },
+    "#EC-66731": {
+      "customer_id": "CUS-66731",
+      "status": "pending",
+      "shipping_address": "shipping_address:742 Juniper Street, Denver, CO 80220",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "All changes must remain within one confirmed pending-order modification.",
+        "Only the affected split-shipment line may be changed.",
+        "Replacement is permitted only if the customer-approved spend boundary is not exceeded."
+      ],
+      "items": [
+        {
+          "item_id": "IT-JACKET-66731",
+          "product_id": "PRD-JACKET-620",
+          "variant_id": "JACKET-620-NAVY-M",
+          "product_name": "All-Weather Jacket",
+          "price": 119.0
+        },
+        {
+          "item_id": "IT-BOTTLE-66731",
+          "product_id": "PRD-BOTTLE-150",
+          "variant_id": "BOTTLE-150-STEEL",
+          "product_name": "Insulated Bottle",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_66731",
+          "amount": 143.0,
+          "kind": "charge",
+          "note": "payment_method_token:pm_tok_card_66731"
+        }
+      ]
+    },
+    "#EC-66713": {
+      "customer_id": "CUS-66713",
+      "status": "pending",
+      "shipping_address": "shipping_address:1187 Poplar Avenue, Aurora, CO 80012",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Legacy pending order under outdated customer profile."
+      ],
+      "items": [
+        {
+          "item_id": "IT-JACKET-66713",
+          "product_id": "PRD-JACKET-620",
+          "variant_id": "JACKET-620-OLIVE-M",
+          "product_name": "All-Weather Jacket",
+          "price": 121.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "pm_tok_card_66713_old",
+          "amount": 121.0,
+          "kind": "charge",
+          "note": "payment_method_token:pm_tok_card_66713_old"
+        }
+      ]
+    },
+    "#EC-84571": {
+      "customer_id": "CUS-8451",
+      "status": "delivered",
+      "shipping_address": "shipping_address:1842 NW Market Street, Seattle, WA 98107",
+      "delivered_at": "2026-04-14",
+      "tracking_number": "TRK-845710",
+      "case_link": "CASE-DMG-84571",
+      "modification_constraints": [
+        "Delivered orders cannot be changed through pending-order modification tools.",
+        "Only the damaged delivered item may be resolved.",
+        "Do not resolve background or adjacent appliances not present in authoritative order contents."
+      ],
+      "items": [
+        {
+          "item_id": "IT-ESP-84571",
+          "product_id": "PRD-ESP-845",
+          "variant_id": "ESP-845-CRM",
+          "product_name": "Compact Espresso Machine",
+          "price": 259.0
+        },
+        {
+          "item_id": "IT-MUG-84571",
+          "product_id": "PRD-MUG-845",
+          "variant_id": "MUG-845-WHT-2PK",
+          "product_name": "Double-Wall Espresso Cup Set",
+          "price": 26.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8451",
+          "amount": 285.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8451",
+          "amount": 12.95,
+          "kind": "shipping_charge",
+          "note": "standard shipping"
+        }
+      ]
+    },
+    "#EC-84517": {
+      "customer_id": "CUS-8457",
+      "status": "delivered",
+      "shipping_address": "shipping_address:1842 NW Market Street Apt 4, Seattle, WA 98107",
+      "delivered_at": "2026-03-21",
+      "tracking_number": "TRK-845171",
+      "case_link": "CASE-DMG-84517",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-ESP-84517",
+          "product_id": "PRD-ESP-330",
+          "variant_id": "ESP-330-MBK",
+          "product_name": "Compact Espresso Machine",
+          "price": 249.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8457",
+          "amount": 249.0,
+          "kind": "charge",
+          "note": "same-name decoy order"
+        }
+      ]
+    },
+    "#EC-84571-ARCH": {
+      "customer_id": "CUS-8451-OLD",
+      "status": "archived",
+      "shipping_address": "shipping_address:55 Greenwood Avenue N, Seattle, WA 98103",
+      "delivered_at": "2025-12-18",
+      "tracking_number": "TRK-845709",
+      "case_link": "",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-GRIND-84571-ARCH",
+          "product_id": "PRD-GRIND-410",
+          "variant_id": "GRIND-410-BLK",
+          "product_name": "Burr Coffee Grinder",
+          "price": 119.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8451_old",
+          "amount": 119.0,
+          "kind": "charge",
+          "note": "archived historical purchase"
+        }
+      ]
+    },
+    "#EC-88263": {
+      "customer_id": "CUS-8826",
+      "status": "pending",
+      "shipping_address": "shipping_address:Strada Mihai Eminescu 142, Bucharest 020086, RO",
+      "delivered_at": "",
+      "tracking_number": "TRK-882630",
+      "case_link": "CASE-CB-88263",
+      "modification_constraints": [
+        "All customer-requested changes require successful authentication first.",
+        "Cross-border customs review is active; address edits require explicit policy validation before support-side modification.",
+        "Only apartment or unit completion is in scope for this hold if export release lock has not been applied."
+      ],
+      "items": [
+        {
+          "item_id": "IT-KEY-88263",
+          "product_id": "PRD-KEY-200",
+          "variant_id": "KEY-200-LIN-TKL",
+          "product_name": "Mechanical Keyboard",
+          "price": 124.0
+        },
+        {
+          "item_id": "IT-ADAPT-88263",
+          "product_id": "PRD-ADAPT-330",
+          "variant_id": "ADAPT-330-EU-USB",
+          "product_name": "Universal Travel Adapter",
+          "price": 36.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8826",
+          "amount": 160.0,
+          "kind": "charge",
+          "note": "Cross-border pending order under customs pre-clearance review."
+        }
+      ]
+    },
+    "#EC-88236": {
+      "customer_id": "CUS-8827",
+      "status": "pending",
+      "shipping_address": "shipping_address:Bulevardul Dacia 88, Bucharest 020051, RO",
+      "delivered_at": "",
+      "tracking_number": "TRK-882360",
+      "case_link": "CASE-CB-88236",
+      "modification_constraints": [
+        "Separate account and separate order. Not linked to the active customs-hold scenario for #EC-88263."
+      ],
+      "items": [
+        {
+          "item_id": "IT-CUBE-88236",
+          "product_id": "PRD-CUBE-610",
+          "variant_id": "CUBE-610-GRY",
+          "product_name": "Packing Cube Set",
+          "price": 28.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8827",
+          "amount": 28.0,
+          "kind": "charge",
+          "note": "Separate customer order."
+        }
+      ]
+    },
+    "#EC-88263-ARCH": {
+      "customer_id": "CUS-8826-OLD",
+      "status": "canceled",
+      "shipping_address": "shipping_address:Strada Franceza 21, Bucharest 030106, RO",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived order version retained for audit; non-editable."
+      ],
+      "items": [
+        {
+          "item_id": "IT-ADAPT-88263A",
+          "product_id": "PRD-ADAPT-330",
+          "variant_id": "ADAPT-330-UK-USB",
+          "product_name": "Universal Travel Adapter",
+          "price": 39.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8826_old",
+          "amount": 39.0,
+          "kind": "voided_charge",
+          "note": "Archived obsolete order snapshot."
+        }
+      ]
+    },
+    "#EC-73144": {
+      "customer_id": "CUS-7314",
+      "status": "pending",
+      "shipping_address": "shipping_address:1842 11th Avenue W, Seattle, WA 98119",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-SPLIT-73144",
+      "modification_constraints": [
+        "Split shipment is already allocated; only the blocked furniture bundle may be changed.",
+        "Bookshelf and side table substitutions must stay coordinated by finish and must both remain eligible to ship this week.",
+        "Do not modify the allocated floor lamp shipment group.",
+        "All approved pending-order changes must be committed in one bundled modification."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BOOK-73144-A",
+          "product_id": "PRD-BOOK-880",
+          "variant_id": "BOOK-880-WALNUT-72",
+          "product_name": "Open Frame Bookshelf",
+          "price": 289.0,
+          "shipment_group": "SG-WH2-BLOCKED",
+          "fulfillment_status": "allocation_blocked"
+        },
+        {
+          "item_id": "IT-TABLE-73144-B",
+          "product_id": "PRD-TABLE-880",
+          "variant_id": "TABLE-880-WALNUT",
+          "product_name": "Matching Side Table",
+          "price": 149.0,
+          "shipment_group": "SG-WH2-BLOCKED",
+          "fulfillment_status": "awaiting_coordinated_substitution"
+        },
+        {
+          "item_id": "IT-LAMP-73144-C",
+          "product_id": "PRD-LAMP-930",
+          "variant_id": "LAMP-930-LINEN",
+          "product_name": "Arc Floor Lamp",
+          "price": 118.0,
+          "shipment_group": "SG-WH1-READY",
+          "fulfillment_status": "allocated"
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7314",
+          "amount": 556.0,
+          "kind": "charge",
+          "note": "original pending-order authorization"
+        }
+      ]
+    },
+    "#EC-73141": {
+      "customer_id": "CUS-7315",
+      "status": "pending",
+      "shipping_address": "shipping_address:1842 11th Avenue W, Unit 3, Seattle, WA 98119",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-SPLIT-73141",
+      "modification_constraints": [
+        "Separate customer profile and separate furniture inquiry. No approved substitution bundle exists."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BOOK-73141-A",
+          "product_id": "PRD-BOOK-880",
+          "variant_id": "BOOK-880-OAK-72",
+          "product_name": "Open Frame Bookshelf",
+          "price": 299.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7315",
+          "amount": 299.0,
+          "kind": "charge",
+          "note": "same-name decoy pending order"
+        }
+      ]
+    },
+    "#EC-73114": {
+      "customer_id": "CUS-7314-OLD",
+      "status": "cancelled",
+      "shipping_address": "shipping_address:91 Harbor View Lane, Kirkland, WA 98033",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived cancelled order retained for audit. Not eligible for live pending-order changes."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BOOK-73114-A",
+          "product_id": "PRD-BOOK-880",
+          "variant_id": "BOOK-880-WALNUT-72",
+          "product_name": "Open Frame Bookshelf",
+          "price": 289.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7314_old",
+          "amount": 0.0,
+          "kind": "void",
+          "note": "archived cancelled authorization"
+        }
+      ]
+    },
+    "#EC-91852": {
+      "customer_id": "CUS-VIP-9185",
+      "status": "delivered",
+      "shipping_address": "shipping_address:215 West 78th Street, Apt 9A, New York, NY 10024",
+      "delivered_at": "2026-04-16",
+      "tracking_number": "TRK-918520",
+      "case_link": "CASE-VIP-91852",
+      "modification_constraints": [
+        "Delivered order supports post-delivery return handling only; no pending-order modifications are permitted.",
+        "Only one candle-set item line may be returned while the remaining delivered items stay with the customer.",
+        "Any goodwill credit must be issued separately from the merchandise return and must not be blended into the return refund."
+      ],
+      "items": [
+        {
+          "item_id": "IT-TRAY-91852",
+          "product_id": "PRD-TRAY-918",
+          "variant_id": "TRAY-918-MIRROR-GOLD",
+          "product_name": "Mirrored Vanity Tray",
+          "price": 92.0
+        },
+        {
+          "item_id": "IT-CANDLE-91852-A",
+          "product_id": "PRD-CANDLE-918",
+          "variant_id": "CANDLE-918-AMBER-3PC",
+          "product_name": "Anniversary Candle Set",
+          "price": 58.0
+        },
+        {
+          "item_id": "IT-CANDLE-91852-B",
+          "product_id": "PRD-CANDLE-918",
+          "variant_id": "CANDLE-918-AMBER-3PC",
+          "product_name": "Anniversary Candle Set",
+          "price": 58.0
+        },
+        {
+          "item_id": "IT-THROW-91852",
+          "product_id": "PRD-THROW-918",
+          "variant_id": "THROW-918-ROSE-CASH",
+          "product_name": "Silk Blend Throw",
+          "price": 176.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip9185",
+          "amount": 384.0,
+          "kind": "goods_charge",
+          "note": "goods subtotal"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip9185",
+          "amount": 28.0,
+          "kind": "premium_shipping_charge",
+          "note": "anniversary delivery surcharge"
+        }
+      ]
+    },
+    "#EC-91825": {
+      "customer_id": "CUS-VIP-9186",
+      "status": "delivered",
+      "shipping_address": "shipping_address:215 West 87th Street, Apt 4C, New York, NY 10024",
+      "delivered_at": "2026-04-14",
+      "tracking_number": "TRK-918250",
+      "case_link": "CASE-VIP-91825",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-TRAY-91825",
+          "product_id": "PRD-TRAY-918",
+          "variant_id": "TRAY-918-SMOKE-NICKEL",
+          "product_name": "Mirrored Vanity Tray",
+          "price": 88.0
+        },
+        {
+          "item_id": "IT-CANDLE-91825",
+          "product_id": "PRD-CANDLE-918",
+          "variant_id": "CANDLE-918-IVORY-3PC",
+          "product_name": "Anniversary Candle Set",
+          "price": 56.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip9186",
+          "amount": 144.0,
+          "kind": "goods_charge",
+          "note": "same-name adjacent decoy order"
+        }
+      ]
+    },
+    "#EC-91852-ARCH": {
+      "customer_id": "CUS-VIP-9185-OLD",
+      "status": "archived",
+      "shipping_address": "shipping_address:31 East 62nd Street, New York, NY 10065",
+      "delivered_at": "2025-12-18",
+      "tracking_number": "TRK-918521",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived historical order retained for migration audit only."
+      ],
+      "items": [
+        {
+          "item_id": "IT-CANDLE-91852-ARCH",
+          "product_id": "PRD-CANDLE-918",
+          "variant_id": "CANDLE-918-AMBER-3PC",
+          "product_name": "Anniversary Candle Set",
+          "price": 58.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_vip9185_old",
+          "amount": 58.0,
+          "kind": "charge",
+          "note": "archived order only"
+        }
+      ]
+    },
+    "#EC-66743": {
+      "customer_id": "CUS-6674",
+      "status": "pending",
+      "shipping_address": "shipping_address:Registry split shipment managed under recipient-specific routing; purchaser address on file is shipping_address:19 Rue Paradis, Marseille 13001, FR",
+      "delivered_at": "",
+      "tracking_number": "TRK-667430",
+      "case_link": "CASE-GIFT-66743",
+      "modification_constraints": [
+        "Authenticate customer before any order change.",
+        "Only the pending registry line item IT-MON-66743 may be substituted.",
+        "Do not change recipient mapping, shipment grouping, or destination details for the humidifier line.",
+        "All approved changes must remain within one confirmed pending-order modification."
+      ],
+      "items": [
+        {
+          "item_id": "IT-MON-66743",
+          "product_id": "PRD-MON-440",
+          "variant_id": "MON-440-WHT-1CAM",
+          "product_name": "Smart Baby Monitor",
+          "price": 189.0,
+          "shipment_group": "SG-REG-LYON-PENDING",
+          "fulfillment_status": "allocation_delayed",
+          "recipient_label": "Recipient A",
+          "recipient_shipping_address": "shipping_address:14 Rue de la Charite, Lyon 69002, FR"
+        },
+        {
+          "item_id": "IT-HUM-66743",
+          "product_id": "PRD-HUM-270",
+          "variant_id": "HUM-270-WHT",
+          "product_name": "Quiet Nursery Humidifier",
+          "price": 74.0,
+          "shipment_group": "SG-REG-MRS-READY",
+          "fulfillment_status": "allocated",
+          "recipient_label": "Recipient B",
+          "recipient_shipping_address": "shipping_address:19 Rue Paradis, Marseille 13001, FR"
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6674",
+          "amount": 233.0,
+          "kind": "charge",
+          "note": "Primary registry order authorization."
+        },
+        {
+          "payment_method_id": "gift_card_code:GC-66MR-74DP",
+          "amount": 30.0,
+          "kind": "gift_card_hold",
+          "note": "gift_card_code:GC-66MR-74DP reserved for approved supplemental capture if needed."
+        }
+      ]
+    },
+    "#EC-66734": {
+      "customer_id": "CUS-6675",
+      "status": "pending",
+      "shipping_address": "shipping_address:8 Boulevard Chave, Marseille 13005, FR",
+      "delivered_at": "",
+      "tracking_number": "TRK-667341",
+      "case_link": "CASE-GIFT-66734",
+      "modification_constraints": [
+        "Separate customer and separate registry context. Do not use when handling #EC-66743."
+      ],
+      "items": [
+        {
+          "item_id": "IT-HUM-66734",
+          "product_id": "PRD-HUM-270",
+          "variant_id": "HUM-270-SAGE",
+          "product_name": "Quiet Nursery Humidifier",
+          "price": 76.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6675",
+          "amount": 76.0,
+          "kind": "charge",
+          "note": "Adjacent decoy order for same-name customer."
+        }
+      ]
+    },
+    "#EC-66743-ARCH": {
+      "customer_id": "CUS-6674-OLD",
+      "status": "cancelled",
+      "shipping_address": "shipping_address:Archived registry routing record for prior household profile; not active.",
+      "delivered_at": "",
+      "tracking_number": "TRK-667439",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived cancelled order snapshot; non-editable and not valid for active servicing."
+      ],
+      "items": [
+        {
+          "item_id": "IT-MON-66743-ARCH",
+          "product_id": "PRD-MON-440",
+          "variant_id": "MON-440-GRY-1CAM",
+          "product_name": "Smart Baby Monitor",
+          "price": 179.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6674_old",
+          "amount": 179.0,
+          "kind": "voided_charge",
+          "note": "Archived obsolete registry transaction."
+        }
+      ]
+    },
+    "#EC-55219-MP": {
+      "customer_id": "CUS-5528",
+      "status": "delivered",
+      "shipping_address": "shipping_address:19 NE 2nd Avenue, Miami, FL 33132",
+      "delivered_at": "2026-04-09",
+      "tracking_number": "TRK-552190-MP",
+      "case_link": "CASE-MP-55219",
+      "modification_constraints": [
+        "Separate marketplace order under different customer profile. Not part of CASE-MP-55291."
+      ],
+      "items": [
+        {
+          "item_id": "IT-WATCH-55219",
+          "product_id": "PRD-WATCH-552",
+          "variant_id": "WATCH-552-45MM-BLK",
+          "product_name": "Marketplace Smartwatch",
+          "price": 199.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_5528",
+          "amount": 199.0,
+          "kind": "charge",
+          "note": "adjacent marketplace decoy order"
+        }
+      ]
+    },
+    "#EC-55291-OLD": {
+      "customer_id": "CUS-55291-ALT",
+      "status": "archived",
+      "shipping_address": "shipping_address:2218 Biscayne Boulevard, Apt 4A, Miami, FL 33137",
+      "delivered_at": "2025-11-22",
+      "tracking_number": "TRK-552910-OLD",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived historical marketplace order retained for audit only."
+      ],
+      "items": [
+        {
+          "item_id": "IT-STRAP-55291-OLD",
+          "product_id": "PRD-STRAP-552",
+          "variant_id": "STRAP-552-41MM-BLK",
+          "product_name": "Replacement Silicone Watch Strap",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_5529_old",
+          "amount": 24.0,
+          "kind": "charge",
+          "note": "archived guest-profile marketplace purchase"
+        }
+      ]
+    },
+    "#EC-41027": {
+      "customer_id": "CUS-4102",
+      "status": "delivered",
+      "shipping_address": "shipping_address:3-11-8 Takashima, Apt 604, Nishi-ku, Yokohama 220-0011, JP",
+      "delivered_at": "2026-04-13",
+      "tracking_number": "TRK-410270",
+      "case_link": "CASE-QA-41027",
+      "modification_constraints": [
+        "Delivered order is not eligible for pending-order modification.",
+        "Potential defect review must follow updated blender safety triage and specialized routing guidance before any remedy is promised.",
+        "Do not issue replacement or refund from general support while issue-pattern validation is still under review."
+      ],
+      "items": [
+        {
+          "item_id": "IT-BLEND-41027",
+          "product_id": "PRD-BLEND-820",
+          "variant_id": "BLEND-820-GLS-SLV",
+          "product_name": "Precision Glass Blender",
+          "price": 189.0
+        },
+        {
+          "item_id": "IT-SPAT-41027",
+          "product_id": "PRD-SPAT-125",
+          "variant_id": "SPAT-125-BLK",
+          "product_name": "Silicone Jar Spatula",
+          "price": 12.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_4102",
+          "amount": 201.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_4102",
+          "amount": 14.95,
+          "kind": "international_shipping_charge",
+          "note": "standard international shipping"
+        }
+      ]
+    },
+    "#EC-41072": {
+      "customer_id": "CUS-4103",
+      "status": "delivered",
+      "shipping_address": "shipping_address:3-11-18 Takashima, Apt 204, Nishi-ku, Yokohama 220-0011, JP",
+      "delivered_at": "2026-04-10",
+      "tracking_number": "TRK-410721",
+      "case_link": "CASE-QA-41072",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-BLEND-41072",
+          "product_id": "PRD-BLEND-330",
+          "variant_id": "BLEND-330-SS-1200",
+          "product_name": "Countertop Blender",
+          "price": 149.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_4103",
+          "amount": 149.0,
+          "kind": "charge",
+          "note": "same-name decoy order"
+        }
+      ]
+    },
+    "#EC-41027-ARCH": {
+      "customer_id": "CUS-4102-OLD",
+      "status": "archived",
+      "shipping_address": "shipping_address:18-2 Okano, Nishi-ku, Yokohama 220-0073, JP",
+      "delivered_at": "2025-11-22",
+      "tracking_number": "TRK-410279",
+      "case_link": "CASE-QA-41027-ARCH",
+      "modification_constraints": [
+        "Archived historical order snapshot only."
+      ],
+      "items": [
+        {
+          "item_id": "IT-MIX-41027A",
+          "product_id": "PRD-MIX-210",
+          "variant_id": "MIX-210-WHT",
+          "product_name": "Hand Mixer",
+          "price": 59.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_4102_old",
+          "amount": 59.0,
+          "kind": "charge",
+          "note": "archived order"
+        }
+      ]
+    },
+    "#EC-60488": {
+      "customer_id": "CUS-6048",
+      "status": "delivered",
+      "shipping_address": "shipping_address:1184 SW 22nd Terrace, Miami, FL 33129",
+      "delivered_at": "2026-04-13",
+      "tracking_number": "TRK-604880",
+      "case_link": "CASE-CB-60488",
+      "modification_constraints": [
+        "No post-delivery item modification is allowed on a completed shipment.",
+        "Financial correction may be issued only after confirming whether the extra payment event is a settled duplicate capture rather than a pending authorization.",
+        "Do not route to formal chargeback handling if authoritative internal evidence supports direct correction."
+      ],
+      "items": [
+        {
+          "item_id": "IT-DESK-60488",
+          "product_id": "PRD-DESK-540",
+          "variant_id": "DESK-540-OAK-48",
+          "product_name": "Compact Writing Desk",
+          "price": 229.0
+        },
+        {
+          "item_id": "IT-LAMP-60488",
+          "product_id": "PRD-LAMP-540",
+          "variant_id": "LAMP-540-BRASS",
+          "product_name": "Task Desk Lamp",
+          "price": 69.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6048",
+          "amount": 298.0,
+          "kind": "goods_charge",
+          "note": "primary settled goods capture"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6048",
+          "amount": 16.95,
+          "kind": "shipping_charge",
+          "note": "settled shipping charge"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6048",
+          "amount": 298.0,
+          "kind": "duplicate_goods_capture",
+          "note": "gateway retry created second settled capture under review for internal correction"
+        }
+      ]
+    },
+    "#EC-60498": {
+      "customer_id": "CUS-6049",
+      "status": "pending_review",
+      "shipping_address": "shipping_address:1184 SW 22nd Terrace Apt 4, Miami, FL 33129",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-CB-60498",
+      "modification_constraints": [
+        "Separate account and separate workflow. Not part of the duplicate-capture dispute."
+      ],
+      "items": [
+        {
+          "item_id": "IT-CHAIR-60498",
+          "product_id": "PRD-CHAIR-310",
+          "variant_id": "CHAIR-310-GRY",
+          "product_name": "Ergonomic Desk Chair",
+          "price": 189.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6049",
+          "amount": 189.0,
+          "kind": "authorization_review",
+          "note": "separate fraud-screening payment context"
+        }
+      ]
+    },
+    "#EC-60418": {
+      "customer_id": "CUS-6048-OLD",
+      "status": "delivered",
+      "shipping_address": "shipping_address:77 Meridian Avenue, Miami Beach, FL 33139",
+      "delivered_at": "2025-11-22",
+      "tracking_number": "TRK-604181",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived historical order retained for audit only."
+      ],
+      "items": [
+        {
+          "item_id": "IT-DESK-60418",
+          "product_id": "PRD-DESK-540",
+          "variant_id": "DESK-540-WALNUT-48",
+          "product_name": "Compact Writing Desk",
+          "price": 239.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_6048_old",
+          "amount": 239.0,
+          "kind": "charge",
+          "note": "historical archived transaction"
+        }
+      ]
+    },
+    "#EC-73418": {
+      "customer_id": "CUS-8814",
+      "status": "delivered",
+      "shipping_address": "shipping_address:219 Clarendon Street, Boston, MA 02116",
+      "delivered_at": "2026-04-14",
+      "tracking_number": "TRK-734180",
+      "case_link": "CASE-IMG-5128",
+      "modification_constraints": [
+        "Delivered orders must use post-delivery resolution workflows rather than pending-order modification.",
+        "Only the damaged espresso-machine water tank component is in scope for exchange review unless authoritative evidence shows broader item damage.",
+        "Do not issue duplicate refund, store credit, or replacement if a prior resolution marker is present on the active case."
+      ],
+      "items": [
+        {
+          "item_id": "IT-ESP-73418",
+          "product_id": "PRD-ESP-330",
+          "variant_id": "ESP-330-SS",
+          "product_name": "Compact Espresso Machine",
+          "price": 249.0
+        },
+        {
+          "item_id": "IT-MUG-73418",
+          "product_id": "PRD-MUG-115",
+          "variant_id": "MUG-115-WHT-2PK",
+          "product_name": "Ceramic Demitasse Set",
+          "price": 24.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814sn",
+          "amount": 273.0,
+          "kind": "goods_charge",
+          "note": "customer_email:sienna.navarro@shopline.example completed goods purchase"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814sn",
+          "amount": 12.95,
+          "kind": "shipping_charge",
+          "note": "standard shipping"
+        }
+      ]
+    },
+    "#EC-73481": {
+      "customer_id": "CUS-8814-ALT",
+      "status": "delivered",
+      "shipping_address": "shipping_address:221 Clarendon Street Apt 4C, Boston, MA 02116",
+      "delivered_at": "2026-04-09",
+      "tracking_number": "TRK-734811",
+      "case_link": "CASE-IMG-5126",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-GRIND-73481",
+          "product_id": "PRD-GRIND-410",
+          "variant_id": "GRIND-410-BLK",
+          "product_name": "Burr Coffee Grinder",
+          "price": 119.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814sn_alt",
+          "amount": 119.0,
+          "kind": "charge",
+          "note": "same-name decoy delivered order"
+        }
+      ]
+    },
+    "#EC-73418-OLD": {
+      "customer_id": "CUS-8814-OLD",
+      "status": "archived",
+      "shipping_address": "shipping_address:88 Beacon Street, Cambridge, MA 02139",
+      "delivered_at": "2025-12-14",
+      "tracking_number": "TRK-734182",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived historical order retained for migration review only."
+      ],
+      "items": [
+        {
+          "item_id": "IT-ESP-73418-OLD",
+          "product_id": "PRD-ESP-330",
+          "variant_id": "ESP-330-MBK",
+          "product_name": "Compact Espresso Machine",
+          "price": 249.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_7814sn_old",
+          "amount": 249.0,
+          "kind": "charge",
+          "note": "historical archived purchase"
+        }
+      ]
+    },
+    "#EC-58264": {
+      "customer_id": "CUS-8096",
+      "status": "pending",
+      "shipping_address": "shipping_address:155 Mercer Street, Apt 4D, New York, NY 10012",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-EC-58264",
+      "modification_constraints": [
+        "All approved changes must be bundled into one confirmed pending-order modification.",
+        "Split shipment already allocated across two remaining shipment groups; reroute only applies to groups that have not entered carrier handoff lock.",
+        "Only the delayed duvet cover line may be substituted.",
+        "Saved payment instrument may be used for a positive net delta only after the order adjustment is calculated and customer scope is confirmed."
+      ],
+      "items": [
+        {
+          "item_id": "IT-DUVET-58264-A",
+          "product_id": "PRD-DUVET-820",
+          "variant_id": "DUVET-820-SAND-QUEEN",
+          "product_name": "Linen Duvet Cover Set",
+          "price": 174.0,
+          "shipment_group": "SG-WH2-DELAYED",
+          "fulfillment_status": "allocation_delayed"
+        },
+        {
+          "item_id": "IT-SHEET-58264-B",
+          "product_id": "PRD-SHEET-842",
+          "variant_id": "SHEET-842-IVORY-QUEEN",
+          "product_name": "Washed Cotton Sheet Set",
+          "price": 96.0,
+          "shipment_group": "SG-WH1-READY",
+          "fulfillment_status": "allocated"
+        },
+        {
+          "item_id": "IT-SHAM-58264-C",
+          "product_id": "PRD-SHAM-821",
+          "variant_id": "SHAM-821-SAND-STD-2PK",
+          "product_name": "Linen Pillow Sham Set",
+          "price": 38.0,
+          "shipment_group": "SG-WH1-READY",
+          "fulfillment_status": "allocated"
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8096",
+          "amount": 308.0,
+          "kind": "charge",
+          "note": "Original pending-order authorization."
+        }
+      ]
+    },
+    "#EC-58246": {
+      "customer_id": "CUS-8097",
+      "status": "pending",
+      "shipping_address": "shipping_address:155 Mercer Street, Apt 14B, New York, NY 10012",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "CASE-EC-58246",
+      "modification_constraints": [
+        "Separate same-name account and order. No hotel reroute authorization applies here."
+      ],
+      "items": [
+        {
+          "item_id": "IT-DUVET-58246-A",
+          "product_id": "PRD-DUVET-820",
+          "variant_id": "DUVET-820-MIST-QUEEN",
+          "product_name": "Linen Duvet Cover Set",
+          "price": 178.0
+        },
+        {
+          "item_id": "IT-THROW-58246-B",
+          "product_id": "PRD-THROW-930",
+          "variant_id": "THROW-930-CLAY",
+          "product_name": "Textured Cotton Throw",
+          "price": 52.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8097",
+          "amount": 230.0,
+          "kind": "charge",
+          "note": "Separate pending order for decoy account."
+        }
+      ]
+    },
+    "#EC-58264-ARCH": {
+      "customer_id": "CUS-8096-OLD",
+      "status": "cancelled",
+      "shipping_address": "shipping_address:18 Avenue de Suffren, Paris 75015, FR",
+      "delivered_at": "",
+      "tracking_number": "",
+      "case_link": "",
+      "modification_constraints": [
+        "Archived obsolete order snapshot; non-editable."
+      ],
+      "items": [
+        {
+          "item_id": "IT-DUVET-58264-ARCH",
+          "product_id": "PRD-DUVET-820",
+          "variant_id": "DUVET-820-SAGE-QUEEN",
+          "product_name": "Linen Duvet Cover Set",
+          "price": 176.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8096_old",
+          "amount": 176.0,
+          "kind": "voided_charge",
+          "note": "Archived canceled order retained for audit."
+        }
+      ]
+    },
+    "#EC-91327": {
+      "customer_id": "CUS-8421",
+      "status": "delivered",
+      "shipping_address": "shipping_address:18 East 78th Street, New York, NY 10075",
+      "delivered_at": "2026-04-15",
+      "tracking_number": "TRK-913270",
+      "case_link": "CASE-VIP-3342",
+      "modification_constraints": [
+        "Delivered VIP order; do not modify fulfilled watch line.",
+        "Missing-item remedy must be scoped only to the undelivered component identified in the case record.",
+        "Any additional goodwill must avoid duplicating prior shipping-refund compensation already recorded on the order."
+      ],
+      "items": [
+        {
+          "item_id": "IT-WATCH-91327",
+          "product_id": "PRD-WATCH-910",
+          "variant_id": "WATCH-910-LTD-42-BLK",
+          "product_name": "Limited-Edition Smart Watch",
+          "price": 349.0
+        },
+        {
+          "item_id": "IT-BAND-91327",
+          "product_id": "PRD-BAND-911",
+          "variant_id": "BAND-911-PREM-NVY-M",
+          "product_name": "Premium Smart Watch Band",
+          "price": 59.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8421",
+          "amount": 408.0,
+          "kind": "goods_charge",
+          "note": "goods"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8421",
+          "amount": 18.0,
+          "kind": "premium_shipping_charge",
+          "note": "birthday rush shipping"
+        },
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8421",
+          "amount": -18.0,
+          "kind": "shipping_refund",
+          "note": "late-delivery shipping refund already issued after birthday miss review"
+        }
+      ]
+    },
+    "#EC-91372": {
+      "customer_id": "CUS-8422",
+      "status": "delivered",
+      "shipping_address": "shipping_address:180 East 78th Street, New York, NY 10075",
+      "delivered_at": "2026-04-16",
+      "tracking_number": "TRK-913721",
+      "case_link": "CASE-VIP-3324",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-WATCH-91372",
+          "product_id": "PRD-WATCH-910",
+          "variant_id": "WATCH-910-STD-42-SLV",
+          "product_name": "Smart Watch",
+          "price": 299.0
+        },
+        {
+          "item_id": "IT-CHARGER-91372",
+          "product_id": "PRD-CHARGE-912",
+          "variant_id": "CHARGE-912-MAG-WHT",
+          "product_name": "Magnetic Charging Puck",
+          "price": 29.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8422",
+          "amount": 328.0,
+          "kind": "charge",
+          "note": "same-name decoy order"
+        }
+      ]
+    },
+    "#EC-91227": {
+      "customer_id": "CUS-8421-OLD",
+      "status": "delivered",
+      "shipping_address": "shipping_address:245 West 13th Street, New York, NY 10011",
+      "delivered_at": "2026-01-23",
+      "tracking_number": "TRK-912270",
+      "case_link": "CASE-VIP-3189",
+      "modification_constraints": [],
+      "items": [
+        {
+          "item_id": "IT-SPKR-91227",
+          "product_id": "PRD-SPKR-880",
+          "variant_id": "SPKR-880-WALNUT",
+          "product_name": "Wireless Speaker",
+          "price": 189.0
+        }
+      ],
+      "payments": [
+        {
+          "payment_method_id": "payment_method_token:pm_tok_card_8421_old",
+          "amount": 189.0,
+          "kind": "charge",
+          "note": "archived VIP order"
+        },
+        {
+          "payment_method_id": "gift_card_code:GC-84TK-OLD1",
+          "amount": -20.0,
+          "kind": "store_credit",
+          "note": "closed historical courtesy credit on unrelated archived order"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+# Provider-neutral HarnessAudit online algorithm configuration.
+# Model, revision, endpoint, authentication, temperature, token, and timeout
+# values are injected exclusively by model-stack-profile-v1 at launch time.
+# This file intentionally contains no model identity or credential value.
+
+logging:
+  level: "INFO"
+
+world_model_llm:
+  provider: "custom"
+  use_state_delta: true
+  strict_state_delta_output: true
+  max_semantic_attempts: 3
+  transport_max_attempts: 1
+  prediction_steps: 1
+  log_prompt: false
+  show_policy_references: false
+
+rule_extractor_llm:
+  provider: "custom"
+
+experience_replay:
+  enable: false
+
+trajectory_storage:
+  enable: false
+
+conversation_history:
+  max_length: 30
+  show_full_response: true
+
+planning:
+  enable: true
+  risk_guidance_enable: true
+  enable_short_term_prediction: true
+  enable_long_term_prediction: true
+
+action_agent_llm:
+  provider: "custom"
+
+action_sampling:
+  num_samples: 1
+  use_diverse_sampling: false
+
+risk_score_config:
+  violation_penalty: 0.8
+
+tree_search:
+  n_root: 1
+  n_child: 1
+  m_child: 1
+  max_depth: 1
+  root_risk_threshold: 0.7
+  child_risk_threshold: 0.7

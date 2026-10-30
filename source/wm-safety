@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+SCRIPT_ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+RUNTIME_PYTHON=${WM_SAFETY_PYTHON:-python3}
+export PYTHONPATH="$SCRIPT_ROOT${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONDONTWRITEBYTECODE=1
+exec "$RUNTIME_PYTHON" -m experiments "$@"
