@@ -4,13 +4,16 @@
 
 [![License: MIT (original contributions)](https://img.shields.io/badge/original%20code-MIT-blue.svg)](LICENSE)
 [![Research: Empirical Analysis](https://img.shields.io/badge/research-empirical%20analysis-5865F2.svg)](#overview)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.02815-b31b1b.svg)](https://arxiv.org/abs/2611.02815)
+
+Weixiang Zhao, Zhihao Liu, Guancheng Li, Yanyan Zhao, Bing Qin, and Ting Liu
 
 Research code for an **empirical analysis of world-model-based predictive safety
 for LLM agents**. We examine when predicted consequences improve safety, whether
 the predictions are reliable, and whether agents act faithfully on their content.
 
-**Paper:** the public preprint and its bibliographic metadata will be linked here
-when available.
+**Paper:** [arXiv:2611.02815](https://arxiv.org/abs/2611.02815) ·
+[PDF](https://arxiv.org/pdf/2611.02815)
 
 [Overview](#overview) · [Quick start](#quick-start) · [Experiments](#experiments) ·
 [Reproducibility](#reproducibility-and-release-scope) · [Validation](#validation) ·
@@ -287,8 +290,21 @@ module-level entrypoints are listed in [docs/CODE_MAP.md](docs/CODE_MAP.md).
 
 ## Citation
 
-The paper's public preprint link and formal BibTeX entry will be added after
-publication. For now, identify this code by its repository URL and the exact
+If you use this work, please cite the arXiv preprint:
+
+```bibtex
+@misc{zhao2026predictivesafety,
+  title         = {Predictive Safety Guardrails Do Not Always Make LLM Agents Safer},
+  author        = {Weixiang Zhao and Zhihao Liu and Guancheng Li and Yanyan Zhao and Bing Qin and Ting Liu},
+  year          = {2026},
+  eprint        = {2611.02815},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2611.02815}
+}
+```
+
+For code-specific reproducibility, also record the repository URL and exact Git
 commit used in your experiments.
 
 ## Acknowledgments and license
